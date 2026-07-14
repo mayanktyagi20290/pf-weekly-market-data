@@ -104,13 +104,21 @@ def stoch_rsi(series: pd.Series, period: int = 14) -> pd.Series:
     return ((r - lowest) / (highest - lowest).replace(0, np.nan)) * 100
 
 
-def signal_for(week4: str) -> str:
-    return {
-        "1st white": "fresh_buy",
-        "1st red": "fresh_sell",
-        "2nd white": "continuing_up",
-        "2nd red": "continuing_down",
-    }.get(week4, "unknown")
+def signal_for(stochrsi_now, stochrsi_prev):
+    """
+    New rule (per your criteria):
+      - "sell"    : StochRSI was near the top (>=95, i.e. was ~100/overbought)
+                    last week and has now come down to <=80 this week
+                    -> momentum rolling over from overbought
+      - "buy"     : current StochRSI > 50 (upside bias)
+      - "neutral" : anything else
+    """
+    if stochrsi_prev is not None and stochrsi_now is not None:
+        if stochrsi_prev >= 95 and stochrsi_now <= 80:
+            return "sell"
+    if stochrsi_now is not None and stochrsi_now > 50:
+        return "buy"
+    return "neutral"
 
 
 def analyze_one(symbol: str, hist: pd.DataFrame):
@@ -120,15 +128,21 @@ def analyze_one(symbol: str, hist: pd.DataFrame):
     ha = heikin_ashi(hist)
     labels = candle_streak_labels(ha, n=4)
     srsi_series = stoch_rsi(hist["Close"], period=14)
-    latest_srsi = srsi_series.iloc[-1]
-    latest_srsi = None if pd.isna(latest_srsi) else round(float(latest_srsi), 1)
+
+    def _clean(v):
+        return None if pd.isna(v) else round(float(v), 1)
+
+    latest_srsi = _clean(srsi_series.iloc[-1])
+    prev_srsi = _clean(srsi_series.iloc[-2]) if len(srsi_series) >= 2 else None
+
     cmp_price = round(float(hist["Close"].iloc[-1]), 2)
     week4 = labels[3]
     return {
         "cmp": cmp_price,
         "week1": labels[0], "week2": labels[1], "week3": labels[2], "week4": week4,
         "stochrsi": latest_srsi,
-        "signal": signal_for(week4),
+        "stochrsi_prev": prev_srsi,
+        "signal": signal_for(latest_srsi, prev_srsi),
     }
 
 
@@ -186,9 +200,9 @@ def main():
     with open("nifty500_screener.json", "w") as f:
         json.dump(output, f, indent=2)
 
-    buy = sum(1 for v in results.values() if v["signal"] == "fresh_buy")
-    sell = sum(1 for v in results.values() if v["signal"] == "fresh_sell")
-    print(f"Analyzed {len(results)}/{len(symbols)} · fresh_buy={buy} · fresh_sell={sell} · errors={len(errors)}")
+    buy = sum(1 for v in results.values() if v["signal"] == "buy")
+    sell = sum(1 for v in results.values() if v["signal"] == "sell")
+    print(f"Analyzed {len(results)}/{len(symbols)} · buy={buy} · sell={sell} · errors={len(errors)}")
 
 
 if __name__ == "__main__":
