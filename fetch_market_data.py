@@ -88,15 +88,27 @@ def rsi(series: pd.Series, period: int = 14) -> pd.Series:
     loss = -delta.clip(upper=0)
     avg_gain = gain.ewm(alpha=1 / period, min_periods=period, adjust=False).mean()
     avg_loss = loss.ewm(alpha=1 / period, min_periods=period, adjust=False).mean()
-    rs = avg_gain / avg_loss.replace(0, np.nan)
-    return 100 - (100 / (1 + rs))
+    # A clean multi-week run (no losing weeks at all) makes avg_loss exactly 0,
+    # which should correctly yield RSI=100 (division by 0 -> inf -> RSI 100),
+    # not NaN. Only the true 0/0 (no movement at all) needs special-casing.
+    with np.errstate(divide="ignore", invalid="ignore"):
+        rs = avg_gain / avg_loss
+    r = 100 - (100 / (1 + rs))
+    r = r.mask((avg_loss == 0) & (avg_gain > 0), 100.0)
+    r = r.mask((avg_loss == 0) & (avg_gain == 0), 50.0)
+    return r
 
 
 def stoch_rsi(series: pd.Series, period: int = 14) -> pd.Series:
     r = rsi(series, period)
     lowest = r.rolling(period).min()
     highest = r.rolling(period).max()
-    return ((r - lowest) / (highest - lowest).replace(0, np.nan)) * 100
+    with np.errstate(divide="ignore", invalid="ignore"):
+        k = ((r - lowest) / (highest - lowest)) * 100
+    # RSI flat over the whole window -> use its own value (already 0-100)
+    # instead of a meaningless neutral default.
+    k = k.mask(highest == lowest, r)
+    return k
 
 
 def fetch_current_price(symbol: str):
