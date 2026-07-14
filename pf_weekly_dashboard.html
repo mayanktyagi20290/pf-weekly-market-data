@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Current PF — Weekly</title>
+<style>
+  :root{
+    --bg:#0A0D12;
+    --panel:#10141B;
+    --panel-alt:#141922;
+    --border:#232A35;
+    --text:#DCE3ED;
+    --muted:#74808F;
+    --green:#16C784;
+    --green-dim:#0E7A54;
+    --red:#EA3943;
+    --red-dim:#8C232B;
+    --amber:#F0B90B;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
+  body{
+    font-family:'IBM Plex Mono', 'Space Mono', monospace;
+    font-size:13px;
+    -webkit-font-smoothing:antialiased;
+  }
+  @font-face{}
+  .display{font-family:'Space Grotesk','Segoe UI',sans-serif;}
+
+  .wrap{max-width:1440px;margin:0 auto;padding:22px 24px 60px;}
+
+  /* header */
+  .topbar{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:10px;}
+  .brand{display:flex;align-items:baseline;gap:10px;}
+  .brand .tag{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:.5px;color:var(--text);
+  }
+  .brand .sub{color:var(--muted);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;}
+  .asof{color:var(--muted);font-size:11px;}
+  .asof input{background:transparent;border:none;color:var(--muted);font-family:inherit;font-size:11px;border-bottom:1px dashed var(--border);}
+
+  /* summary strip */
+  .summary{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:1px;
+    background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:16px;
+  }
+  .stat{background:var(--panel);padding:14px 16px;}
+  .stat .label{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:6px;}
+  .stat .val{font-family:'Space Grotesk',sans-serif;font-size:19px;font-weight:600;}
+  .stat .sub{font-size:11px;margin-top:3px;}
+  .pos{color:var(--green);} .neg{color:var(--red);}
+
+  /* toolbar */
+  .toolbar{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap;}
+  .toolbar .spacer{flex:1;}
+  button{
+    background:var(--panel-alt);border:1px solid var(--border);color:var(--text);
+    font-family:inherit;font-size:11.5px;padding:7px 12px;border-radius:5px;cursor:pointer;letter-spacing:.3px;
+  }
+  button:hover{border-color:var(--amber);color:var(--amber);}
+  button.primary{background:var(--amber);color:#1a1300;border-color:var(--amber);font-weight:600;}
+  button.primary:hover{opacity:.88;color:#1a1300;}
+  button.danger:hover{border-color:var(--red);color:var(--red);}
+  .save-note{color:var(--muted);font-size:11px;}
+  .save-note.ok{color:var(--green);}
+  .save-note.err{color:var(--red);}
+  input.cmpurl{
+    flex:1;min-width:220px;max-width:520px;background:var(--panel-alt);border:1px solid var(--border);
+    color:var(--text);font-family:inherit;font-size:11.5px;padding:7px 10px;border-radius:5px;
+  }
+  input.cmpurl:focus{outline:none;border-color:var(--amber);}
+
+  /* table */
+  .tablewrap{border:1px solid var(--border);border-radius:6px;overflow-x:auto;background:var(--panel);}
+  table{border-collapse:collapse;width:100%;min-width:1180px;}
+  thead th{
+    position:sticky;top:0;background:var(--panel-alt);color:var(--muted);
+    font-weight:600;font-size:10px;text-transform:uppercase;letter-spacing:.8px;
+    padding:10px 8px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;
+  }
+  thead th.left{text-align:left;}
+  thead th:hover{color:var(--amber);}
+  thead th.sorted{color:var(--amber);}
+  tbody td{padding:6px 8px;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap;}
+  tbody td.left{text-align:left;}
+  tbody tr:hover{background:var(--panel-alt);}
+  .stockname{font-weight:600;color:var(--text);}
+  .stockname a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted);}
+  .stockname a:hover{color:var(--amber);border-color:var(--amber);}
+  .ticker{color:var(--muted);font-size:10.5px;display:block;}
+
+  input.cell{
+    width:72px;background:transparent;border:1px solid transparent;color:var(--text);
+    font-family:inherit;font-size:12.5px;text-align:right;padding:3px 4px;border-radius:4px;
+  }
+  input.cell:hover{border-color:var(--border);}
+  input.cell:focus{outline:none;border-color:var(--amber);background:var(--panel-alt);}
+
+  .rank{
+    display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:5px;
+    background:var(--panel-alt);color:var(--amber);font-size:11px;font-weight:700;font-family:'Space Grotesk',sans-serif;
+  }
+  .rsi{font-weight:600;}
+  .rsi.hot{color:var(--red);}
+  .rsi.strong{color:var(--green);}
+
+  .allo-bar{width:64px;height:5px;border-radius:3px;background:var(--border);position:relative;display:inline-block;vertical-align:middle;margin-right:6px;overflow:hidden;}
+  .allo-bar i{position:absolute;left:0;top:0;bottom:0;background:var(--amber);}
+
+  /* weekly trend strip */
+  .trend{display:flex;gap:3px;justify-content:flex-end;}
+  .wk{
+    width:20px;height:20px;border-radius:4px;cursor:pointer;border:1px solid rgba(255,255,255,.06);
+    display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:rgba(0,0,0,.55);
+    transition:transform .1s;
+  }
+  .wk:hover{transform:scale(1.12);}
+  .wk.w2{background:var(--green);}
+  .wk.w1{background:#7de0bd;}
+  .wk.r1{background:#f0959a;}
+  .wk.r2{background:var(--red);}
+
+  .delrow{color:var(--muted);cursor:pointer;font-size:14px;padding:2px 6px;border-radius:4px;}
+  .delrow:hover{color:var(--red);background:var(--panel-alt);}
+
+  .legend{display:flex;gap:14px;align-items:center;margin-top:10px;color:var(--muted);font-size:10.5px;flex-wrap:wrap;}
+  .legend span{display:inline-flex;align-items:center;gap:5px;}
+  .legend i{width:12px;height:12px;border-radius:3px;display:inline-block;}
+
+  footer{margin-top:16px;color:var(--muted);font-size:10.5px;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="tag">CURRENT PF — WEEKLY</span>
+      <span class="sub">Equentis · live editable book</span>
+    </div>
+    <div class="asof">as of <input id="asof" value=""></div>
+  </div>
+
+  <div class="summary" id="summary"></div>
+
+  <div class="toolbar">
+    <button class="primary" onclick="addRow()">+ Add stock</button>
+    <button onclick="saveData()">Save</button>
+    <button onclick="exportJSON()">Export JSON</button>
+    <button onclick="document.getElementById('importFile').click()">Import JSON</button>
+    <input type="file" id="importFile" accept=".json" style="display:none" onchange="importJSON(event)">
+    <button onclick="exportCSV()">Export CSV</button>
+    <div class="spacer"></div>
+    <span class="save-note" id="saveNote">loading…</span>
+  </div>
+
+  <div class="toolbar" style="margin-top:-4px;">
+    <input id="cmpUrl" class="cmpurl" placeholder="market_data.json URL (GitHub Pages / raw.githubusercontent.com link)" onchange="markUnsaved()">
+    <button onclick="syncCMP()">Sync CMP + Trend + StochRSI</button>
+    <label style="color:var(--muted);font-size:11px;display:flex;align-items:center;gap:5px;">
+      <input type="checkbox" id="autoSync" onchange="markUnsaved()"> auto-sync on open
+    </label>
+    <div class="spacer"></div>
+    <span class="save-note" id="cmpNote"></span>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="left" data-k="rank">#</th>
+          <th class="left" data-k="stock">Stock</th>
+          <th data-k="qty">Qty</th>
+          <th data-k="avg">Avg.</th>
+          <th data-k="current">CMP</th>
+          <th data-k="invested">Invested</th>
+          <th data-k="curval">Current Val</th>
+          <th data-k="pnl">P&amp;L</th>
+          <th data-k="pnlpct">P&amp;L %</th>
+          <th data-k="allo">% Allo</th>
+          <th data-k="contrib">Contribution</th>
+          <th data-k="rsi">RSI</th>
+          <th class="left">Weekly Trend</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="legend">
+    <span><i style="background:var(--green)"></i> 2nd white (strong up)</span>
+    <span><i style="background:#7de0bd"></i> 1st white (up)</span>
+    <span><i style="background:#f0959a"></i> 1st red (down)</span>
+    <span><i style="background:var(--red)"></i> 2nd red (strong down)</span>
+    <span style="margin-left:auto">Click a week square to cycle its state · Click any column header to sort</span>
+  </div>
+
+  <footer>Self-contained tool · edit Qty / Avg / CMP inline · data persists to your account via Save</footer>
+</div>
+
+<script>
+const STORAGE_KEY = 'pf_weekly_current';
+const WK_STATES = ['2nd red','1st red','1st white','2nd white'];
+const WK_CLASS = {'2nd red':'r2','1st red':'r1','1st white':'w1','2nd white':'w2'};
+
+let data = [
+{"stock":"CUPID","ticker":"NSE:CUPID","qty":250,"avg":112.67,"current":217.4,"week1":"2nd white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":100,"link":"https://chartink.com/stocks/cupid.html"},
+{"stock":"COFORGE","ticker":"NSE:COFORGE","qty":100,"avg":1123.53,"current":1534,"week1":"1st white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":96,"link":"https://chartink.com/stocks/coforge.html"},
+{"stock":"SUBEXLTD","ticker":"NSE:SUBEXLTD","qty":2000,"avg":10.7,"current":13.47,"week1":"1st white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":100,"link":"https://chartink.com/stocks/subexltd.html"},
+{"stock":"ETERNAL","ticker":"NSE:ETERNAL","qty":550,"avg":245.07,"current":286,"week1":"1st white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":100,"link":"https://chartink.com/stocks/eternal.html"},
+{"stock":"UJJIVANSFB","ticker":"NSE:UJJIVANSFB","qty":500,"avg":56.0,"current":65.11,"week1":"1st white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":100,"link":"https://chartink.com/stocks/ujjivansfb.html"},
+{"stock":"JSWINFRA","ticker":"NSE:JSWINFRA","qty":79,"avg":302.83,"current":343.85,"week1":"2nd white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":99,"link":"https://chartink.com/stocks/jswinfra.html"},
+{"stock":"MOSCHIP","ticker":"NSE:MOSCHIP","qty":137,"avg":225.41,"current":240.69,"week1":"1st white","week2":"1st red","week3":"1st white","week4":"2nd white","rsi":100,"link":"https://chartink.com/stocks/moschip.html"},
+{"stock":"STALLION","ticker":"NSE:STALLION","qty":215,"avg":191.23,"current":204.1,"week1":"2nd white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":100,"link":"https://chartink.com/stocks/stallion.html"},
+{"stock":"EXIDEIND","ticker":"NSE:EXIDEIND","qty":66,"avg":397.36,"current":418.25,"week1":"2nd white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":100,"link":"https://chartink.com/stocks/exideind.html"},
+{"stock":"EMCURE","ticker":"NSE:EMCURE","qty":90,"avg":1730.96,"current":1810,"week1":"2nd white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":62,"link":"https://chartink.com/stocks/emcure.html"},
+{"stock":"JAMNAAUTO","ticker":"NSE:JAMNAAUTO","qty":250,"avg":124.58,"current":129.55,"week1":"1st white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":100,"link":"https://chartink.com/stocks/jamnaauto.html"},
+{"stock":"CHENNPETRO","ticker":"NSE:CHENNPETRO","qty":25,"avg":1077.3,"current":1113.9,"week1":"2nd white","week2":"1st red","week3":"1st white","week4":"2nd white","rsi":49,"link":"https://chartink.com/stocks/chennpetro.html"},
+{"stock":"TATACAP","ticker":"NSE:TATACAP","qty":302,"avg":345.3,"current":356,"week1":"2nd white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":82,"link":"https://chartink.com/stocks/tatacap.html"},
+{"stock":"PREMIERENE","ticker":"NSE:PREMIERENE","qty":55,"avg":1081.98,"current":1101,"week1":"2nd white","week2":"2nd white","week3":"1st red","week4":"1st white","rsi":79,"link":"https://chartink.com/stocks/PREMIERENE.html"},
+{"stock":"CHAMBLFERT","ticker":"NSE:CHAMBLFERT","qty":44,"avg":453.05,"current":455.2,"week1":"2nd white","week2":"2nd white","week3":"1st red","week4":"2nd red","rsi":45,"link":"https://chartink.com/stocks/chamblfert.html"},
+{"stock":"RITES","ticker":"NSE:RITES","qty":120,"avg":223.66,"current":221.1,"week1":"1st white","week2":"2nd white","week3":"2nd white","week4":"2nd white","rsi":100,"link":"https://chartink.com/stocks/rites.html"},
+{"stock":"GPPL","ticker":"NSE:GPPL","qty":150,"avg":156.75,"current":151.3,"week1":"2nd red","week2":"2nd red","week3":"2nd red","week4":"2nd red","rsi":70,"link":"https://chartink.com/stocks/gppl.html"},
+{"stock":"JSWENERGY","ticker":"NSE:JSWENERGY","qty":30,"avg":579.63,"current":557.5,"week1":"2nd red","week2":"1st white","week3":"1st red","week4":"2nd red","rsi":24,"link":"https://chartink.com/stocks/jswenergy.html"},
+{"stock":"WIPRO","ticker":"NSE:WIPRO","qty":850,"avg":194.36,"current":176.8,"week1":"2nd red","week2":"2nd red","week3":"2nd red","week4":"2nd red","rsi":2,"link":"https://chartink.com/stocks/wipro.html"},
+{"stock":"TEJASNET","ticker":"NSE:TEJASNET","qty":70,"avg":613.78,"current":542.9,"week1":"2nd white","week2":"2nd white","week3":"2nd white","week4":"1st red","rsi":61,"link":"https://chartink.com/stocks/tejasnet.html"},
+{"stock":"SARDAEN","ticker":"NSE:SARDAEN","qty":50,"avg":566.26,"current":493,"week1":"2nd red","week2":"2nd red","week3":"2nd red","week4":"2nd red","rsi":0,"link":"https://chartink.com/stocks/sardaen.html"}
+];
+
+let sortKey = 'contrib', sortDir = -1;
+
+function fmt(n, dec=2){ if(n===null||n===undefined||isNaN(n)) return '—'; return n.toLocaleString('en-IN',{minimumFractionDigits:dec,maximumFractionDigits:dec}); }
+function fmtInt(n){ return Math.round(n).toLocaleString('en-IN'); }
+
+function computed(){
+  const totalCurrent = data.reduce((s,r)=>s + r.qty*r.current, 0);
+  return data.map(r=>{
+    const invested = r.qty*r.avg;
+    const curval = r.qty*r.current;
+    const pnl = curval - invested;
+    const pnlpct = invested ? pnl/invested : 0;
+    const allo = totalCurrent ? curval/totalCurrent : 0;
+    const contrib = invested ? pnl/invested*allo : 0; // proportional contribution weight
+    return {...r, invested, curval, pnl, pnlpct, allo, contrib};
+  });
+}
+
+function render(){
+  const rows = computed();
+  // rank = position by P&L contribution, always computed independent of view sort
+  const rankOrder = [...rows].sort((a,b)=>b.contrib-a.contrib);
+  rankOrder.forEach((r,i)=>{ r.rank = i+1; });
+
+  // sort (for display order)
+  const sorted = [...rows].sort((a,b)=>{
+    let av = sortKey==='stock' ? a.stock : a[sortKey];
+    let bv = sortKey==='stock' ? b.stock : b[sortKey];
+    if(typeof av === 'string') return sortDir * av.localeCompare(bv);
+    return sortDir * ((av??0) - (bv??0));
+  });
+
+  const totalInvested = rows.reduce((s,r)=>s+r.invested,0);
+  const totalCurrent = rows.reduce((s,r)=>s+r.curval,0);
+  const totalPnl = totalCurrent - totalInvested;
+  const totalPnlPct = totalInvested ? totalPnl/totalInvested : 0;
+  const winners = rows.filter(r=>r.pnl>=0).length;
+
+  document.getElementById('summary').innerHTML = `
+    <div class="stat"><div class="label">Invested</div><div class="val">₹${fmtInt(totalInvested)}</div></div>
+    <div class="stat"><div class="label">Current Value</div><div class="val">₹${fmtInt(totalCurrent)}</div></div>
+    <div class="stat"><div class="label">Total P&amp;L</div><div class="val ${totalPnl>=0?'pos':'neg'}">${totalPnl>=0?'+':''}₹${fmtInt(totalPnl)}</div></div>
+    <div class="stat"><div class="label">P&amp;L %</div><div class="val ${totalPnlPct>=0?'pos':'neg'}">${totalPnlPct>=0?'+':''}${fmt(totalPnlPct*100,1)}%</div></div>
+    <div class="stat"><div class="label">Holdings</div><div class="val">${rows.length}</div></div>
+    <div class="stat"><div class="label">Winners / Losers</div><div class="val"><span class="pos">${winners}</span> / <span class="neg">${rows.length-winners}</span></div></div>
+  `;
+
+  const maxAllo = Math.max(...rows.map(r=>r.allo), 0.0001);
+
+  document.getElementById('tbody').innerHTML = sorted.map((r)=>{
+    const origIdx = data.indexOf(data.find(d=>d.stock===r.stock && d.ticker===r.ticker));
+    const rsiClass = r.rsi>=80?'hot':(r.rsi<=30?'strong':'');
+    const trend = ['week1','week2','week3','week4'].map((wk,i)=>{
+      const st = r[wk];
+      return `<div class="wk ${WK_CLASS[st]}" title="${st}" onclick="cycleWeek(${origIdx},'${wk}')"></div>`;
+    }).join('');
+    return `
+    <tr>
+      <td class="left"><span class="rank">${r.rank??''}</span></td>
+      <td class="left">
+        <span class="stockname"><a href="${r.link}" target="_blank" rel="noopener">${r.stock}</a></span>
+        <span class="ticker">${r.ticker}</span>
+      </td>
+      <td><input class="cell" type="number" value="${r.qty}" onchange="updateField(${origIdx},'qty',this.value)"></td>
+      <td><input class="cell" type="number" step="0.01" value="${r.avg}" onchange="updateField(${origIdx},'avg',this.value)"></td>
+      <td><input class="cell" type="number" step="0.01" value="${r.current}" onchange="updateField(${origIdx},'current',this.value)"></td>
+      <td>₹${fmtInt(r.invested)}</td>
+      <td>₹${fmtInt(r.curval)}</td>
+      <td class="${r.pnl>=0?'pos':'neg'}">${r.pnl>=0?'+':''}₹${fmtInt(r.pnl)}</td>
+      <td class="${r.pnlpct>=0?'pos':'neg'}">${r.pnlpct>=0?'+':''}${fmt(r.pnlpct*100,1)}%</td>
+      <td><span class="allo-bar"><i style="width:${(r.allo/maxAllo*100).toFixed(0)}%"></i></span>${fmt(r.allo*100,1)}%</td>
+      <td class="${r.contrib>=0?'pos':'neg'}">${r.contrib>=0?'+':''}${fmt(r.contrib*100,2)}%</td>
+      <td><span class="rsi ${rsiClass}">${fmt(r.rsi,0)}</span></td>
+      <td class="left"><div class="trend">${trend}</div></td>
+      <td><span class="delrow" onclick="deleteRow(${origIdx})" title="Remove">✕</span></td>
+    </tr>`;
+  }).join('');
+}
+
+function updateField(idx, field, val){
+  data[idx][field] = parseFloat(val)||0;
+  markUnsaved();
+  render();
+}
+function cycleWeek(idx, wkField){
+  const cur = data[idx][wkField];
+  const next = WK_STATES[(WK_STATES.indexOf(cur)+1)%WK_STATES.length];
+  data[idx][wkField] = next;
+  markUnsaved();
+  render();
+}
+function deleteRow(idx){
+  if(!confirm(`Remove ${data[idx].stock} from the book?`)) return;
+  data.splice(idx,1);
+  markUnsaved();
+  render();
+}
+function addRow(){
+  const name = prompt('Stock name (e.g. TCS):');
+  if(!name) return;
+  data.push({stock:name.toUpperCase(), ticker:'NSE:'+name.toUpperCase(), qty:0, avg:0, current:0,
+    week1:'2nd white',week2:'2nd white',week3:'2nd white',week4:'2nd white', rsi:50,
+    link:`https://chartink.com/stocks/${name.toLowerCase()}.html`});
+  markUnsaved();
+  render();
+}
+
+function markUnsaved(){
+  document.getElementById('saveNote').textContent = 'unsaved changes';
+  document.getElementById('saveNote').classList.remove('ok');
+}
+
+async function syncCMP(url){
+  url = url || document.getElementById('cmpUrl').value.trim();
+  const note = document.getElementById('cmpNote');
+  if(!url){ note.textContent = 'paste your cmp_data.json URL first'; note.className='save-note err'; return; }
+  note.textContent = 'syncing…'; note.className = 'save-note';
+  try{
+    const res = await fetch(url + (url.includes('?') ? '&' : '?') + 't=' + Date.now());
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    const feed = await res.json();
+    let updated = 0, missing = [];
+    data.forEach(r=>{
+      const key = r.stock;
+      let hit = false;
+      const price = feed.prices ? feed.prices[key] : undefined;
+      if(price !== undefined && price !== null){ r.current = price; hit = true; }
+
+      const wk = feed.trend ? feed.trend[key] : undefined;
+      if(wk){
+        if(wk.week1) r.week1 = wk.week1;
+        if(wk.week2) r.week2 = wk.week2;
+        if(wk.week3) r.week3 = wk.week3;
+        if(wk.week4) r.week4 = wk.week4;
+        hit = true;
+      }
+
+      const srsi = feed.stochrsi ? feed.stochrsi[key] : undefined;
+      if(srsi !== undefined && srsi !== null){ r.rsi = srsi; hit = true; }
+
+      if(hit) updated++; else missing.push(key);
+    });
+    const asofStr = feed.asof ? new Date(feed.asof).toLocaleString('en-IN') : 'unknown time';
+    note.textContent = `synced ${updated}/${data.length} · feed as of ${asofStr}` + (missing.length ? ` · missing: ${missing.join(', ')}` : '');
+    note.className = missing.length ? 'save-note err' : 'save-note ok';
+    markUnsaved();
+    render();
+  }catch(e){
+    note.textContent = 'sync failed — check the URL / CORS (' + e.message + ')';
+    note.className = 'save-note err';
+  }
+}
+
+async function saveData(){
+  try{
+    const payload = {
+      data,
+      asof: document.getElementById('asof').value,
+      cmpUrl: document.getElementById('cmpUrl').value,
+      autoSync: document.getElementById('autoSync').checked
+    };
+    const res = await window.storage.set(STORAGE_KEY, JSON.stringify(payload), false);
+    if(res){
+      document.getElementById('saveNote').textContent = 'saved ✓ ' + new Date().toLocaleTimeString('en-IN');
+      document.getElementById('saveNote').classList.add('ok');
+    } else {
+      document.getElementById('saveNote').textContent = 'save failed — try again';
+    }
+  }catch(e){
+    document.getElementById('saveNote').textContent = 'save failed — try again';
+  }
+}
+
+async function loadSaved(){
+  try{
+    const res = await window.storage.get(STORAGE_KEY);
+    if(res && res.value){
+      const parsed = JSON.parse(res.value);
+      if(parsed.data && parsed.data.length) data = parsed.data;
+      if(parsed.asof) document.getElementById('asof').value = parsed.asof;
+      if(parsed.cmpUrl) document.getElementById('cmpUrl').value = parsed.cmpUrl;
+      if(parsed.autoSync) document.getElementById('autoSync').checked = true;
+      document.getElementById('saveNote').textContent = 'loaded saved book';
+      document.getElementById('saveNote').classList.add('ok');
+    } else {
+      document.getElementById('saveNote').textContent = 'showing latest upload · not yet saved';
+    }
+  }catch(e){
+    document.getElementById('saveNote').textContent = 'showing latest upload · not yet saved';
+  }
+  render();
+  if(document.getElementById('autoSync').checked && document.getElementById('cmpUrl').value){
+    syncCMP(document.getElementById('cmpUrl').value);
+  }
+}
+
+function exportJSON(){
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'current_pf_weekly.json';
+  a.click();
+}
+function importJSON(ev){
+  const file = ev.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    try{
+      const parsed = JSON.parse(e.target.result);
+      if(Array.isArray(parsed)){ data = parsed; markUnsaved(); render(); }
+      else alert('JSON should be an array of stock rows.');
+    }catch(err){ alert('Could not parse that file as JSON.'); }
+  };
+  reader.readAsText(file);
+  ev.target.value = '';
+}
+function exportCSV(){
+  const rows = computed();
+  const header = ['Stock','Ticker','Qty','Avg','CMP','Invested','Current Value','P&L','P&L %','% Allo','Contribution','RSI','Week1','Week2','Week3','Week4'];
+  const lines = [header.join(',')];
+  rows.forEach(r=>{
+    lines.push([r.stock,r.ticker,r.qty,r.avg,r.current,r.invested.toFixed(2),r.curval.toFixed(2),r.pnl.toFixed(2),
+      (r.pnlpct*100).toFixed(2),(r.allo*100).toFixed(2),(r.contrib*100).toFixed(2),r.rsi,r.week1,r.week2,r.week3,r.week4].join(','));
+  });
+  const blob = new Blob([lines.join('\n')], {type:'text/csv'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'current_pf_weekly.csv';
+  a.click();
+}
+
+document.querySelectorAll('thead th[data-k]').forEach(th=>{
+  th.addEventListener('click', ()=>{
+    const k = th.dataset.k;
+    if(sortKey===k) sortDir *= -1; else { sortKey = k; sortDir = -1; }
+    document.querySelectorAll('thead th').forEach(x=>x.classList.remove('sorted'));
+    th.classList.add('sorted');
+    render();
+  });
+});
+
+document.getElementById('asof').value = new Date().toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
+document.getElementById('asof').addEventListener('change', markUnsaved);
+
+loadSaved();
+</script>
+</body>
+</html>
