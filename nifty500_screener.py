@@ -1,93 +1,31 @@
 """
-nifty500_screener.py
-Weekly screener across the full Nifty 500 universe. Runs once a week
-(Friday, after market close) via update_nifty500_screener.yml.
+debug_stochrsi.py — run this locally (where you have internet access) to see
+exactly how StochRSI is being computed for a stock, so we can compare
+against what Chartink shows and find the real mismatch.
 
-For every Nifty 500 stock, computes the same three things as the portfolio
-tool (fetch_market_data.py):
-  - CMP (last traded/close price)
-  - Weekly Heikin-Ashi candle-streak label for the last 4 weeks
-  - Weekly StochRSI(14)
+    pip install yfinance pandas numpy --break-system-packages
+    python debug_stochrsi.py PIRAMALFIN
 
-...then buckets each stock into a signal category based on week4 + StochRSI:
-  - fresh_buy    : week4 == "1st white"  (just turned up)
-  - fresh_sell   : week4 == "1st red"    (just turned down)
-  - continuing_up   : week4 == "2nd white" (uptrend continuing)
-  - continuing_down : week4 == "2nd red"   (downtrend continuing)
+Prints:
+  - last 20 weekly closes
+  - RSI(14) series (Wilder's smoothing) - last 10 values
+  - RSI(14) series (Cutler's / simple-average variant) - last 10 values
+  - StochRSI computed from each RSI variant - last 10 values
+  - the exact "current" and "previous" values our screener would use
 
-Writes nifty500_screener.json:
-{
-  "asof": "...",
-  "universe_size": 500,
-  "stocks": {
-    "RELIANCE": {"cmp": 3100.5, "week1":"...", "week2":"...", "week3":"...",
-                 "week4":"...", "stochrsi": 82.3, "signal": "continuing_up"},
-    ...
-  },
-  "errors": ["SYMBOL", ...]   // symbols that failed to fetch entirely
-}
-
-NOTE ON SPEED: fetching 500 tickers one-by-one is slow and easy to get
-rate-limited, so this pulls weekly OHLC in bulk via yf.download() in
-chunks, rather than yf.Ticker(...).history() per symbol.
+Compare the bottom StochRSI numbers against the value Chartink shows on
+its weekly StochRSI(14) panel for the same stock. Whichever variant
+(Wilder vs Cutler) lines up with Chartink tells us which formula to use
+everywhere.
 """
 
-import io
-import json
-import time
-from datetime import datetime
-
+import sys
 import numpy as np
 import pandas as pd
-import pytz
-import requests
 import yfinance as yf
 
-IST = pytz.timezone("Asia/Kolkata")
-WEEKLY_LOOKBACK = "3y"
-CHUNK_SIZE = 40          # tickers per yf.download() batch
-CHUNK_PAUSE_SEC = 2      # pause between batches to be polite
 
-NSE_500_CSV_URL = "https://archives.nseindia.com/content/indices/ind_nifty500list.csv"
-NSE_HEADERS = {
-    # NSE blocks requests without a browser-like User-Agent
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                  "(KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-    "Accept": "text/csv,application/csv,*/*",
-}
-
-
-def get_nifty500_symbols():
-    """Download and parse the official Nifty 500 constituent list from NSE."""
-    resp = requests.get(NSE_500_CSV_URL, headers=NSE_HEADERS, timeout=30)
-    resp.raise_for_status()
-    df = pd.read_csv(io.StringIO(resp.text))
-    symbol_col = next(c for c in df.columns if c.strip().lower() == "symbol")
-    return sorted(df[symbol_col].dropna().unique().tolist())
-
-
-def to_yf_symbol(nse_symbol: str) -> str:
-    return f"{nse_symbol}.NS"
-
-
-def heikin_ashi(df: pd.DataFrame) -> pd.DataFrame:
-    ha_close = (df["Open"] + df["High"] + df["Low"] + df["Close"]) / 4
-    ha_open = [(df["Open"].iloc[0] + df["Close"].iloc[0]) / 2]
-    for i in range(1, len(df)):
-        ha_open.append((ha_open[i - 1] + ha_close.iloc[i - 1]) / 2)
-    return pd.DataFrame({"open": ha_open, "close": ha_close.values}, index=df.index)
-
-
-def candle_streak_labels(ha: pd.DataFrame, n: int = 4):
-    colors = ["white" if c >= o else "red" for o, c in zip(ha["open"], ha["close"])]
-    labels, prev = [], None
-    for color in colors:
-        labels.append(f"2nd {color}" if color == prev else f"1st {color}")
-        prev = color
-    return labels[-n:]
-
-
-def rsi(series: pd.Series, period: int = 14) -> pd.Series:
+def rsi_wilder(series: pd.Series, period: int = 14) -> pd.Series:
     delta = series.diff()
     gain = delta.clip(lower=0)
     loss = -delta.clip(upper=0)
@@ -97,112 +35,65 @@ def rsi(series: pd.Series, period: int = 14) -> pd.Series:
     return 100 - (100 / (1 + rs))
 
 
-def stoch_rsi(series: pd.Series, period: int = 14) -> pd.Series:
-    r = rsi(series, period)
-    lowest = r.rolling(period).min()
-    highest = r.rolling(period).max()
-    return ((r - lowest) / (highest - lowest).replace(0, np.nan)) * 100
+def rsi_cutler(series: pd.Series, period: int = 14) -> pd.Series:
+    """Simple-moving-average based RSI (a common alternative to Wilder's)."""
+    delta = series.diff()
+    gain = delta.clip(lower=0)
+    loss = -delta.clip(upper=0)
+    avg_gain = gain.rolling(period).mean()
+    avg_loss = loss.rolling(period).mean()
+    rs = avg_gain / avg_loss.replace(0, np.nan)
+    return 100 - (100 / (1 + rs))
 
 
-def signal_for(stochrsi_now, stochrsi_prev):
-    """
-    New rule (per your criteria):
-      - "sell"    : StochRSI was near the top (>=95, i.e. was ~100/overbought)
-                    last week and has now come down to <=80 this week
-                    -> momentum rolling over from overbought
-      - "buy"     : current StochRSI > 50 (upside bias)
-      - "neutral" : anything else
-    """
-    if stochrsi_prev is not None and stochrsi_now is not None:
-        if stochrsi_prev >= 95 and stochrsi_now <= 80:
-            return "sell"
-    if stochrsi_now is not None and stochrsi_now > 50:
-        return "buy"
-    return "neutral"
-
-
-def analyze_one(symbol: str, hist: pd.DataFrame):
-    hist = hist.dropna(subset=["Open", "High", "Low", "Close"])
-    if len(hist) < 20:
-        raise ValueError(f"not enough weekly history ({len(hist)} bars)")
-    ha = heikin_ashi(hist)
-    labels = candle_streak_labels(ha, n=4)
-    srsi_series = stoch_rsi(hist["Close"], period=14)
-
-    def _clean(v):
-        return None if pd.isna(v) else round(float(v), 1)
-
-    latest_srsi = _clean(srsi_series.iloc[-1])
-    prev_srsi = _clean(srsi_series.iloc[-2]) if len(srsi_series) >= 2 else None
-
-    cmp_price = round(float(hist["Close"].iloc[-1]), 2)
-    week4 = labels[3]
-    return {
-        "cmp": cmp_price,
-        "week1": labels[0], "week2": labels[1], "week3": labels[2], "week4": week4,
-        "stochrsi": latest_srsi,
-        "stochrsi_prev": prev_srsi,
-        "signal": signal_for(latest_srsi, prev_srsi),
-    }
-
-
-def chunked(lst, n):
-    for i in range(0, len(lst), n):
-        yield lst[i:i + n]
+def stoch_rsi(rsi_series: pd.Series, period: int = 14, smooth_k: int = 1) -> pd.Series:
+    lowest = rsi_series.rolling(period).min()
+    highest = rsi_series.rolling(period).max()
+    raw_k = ((rsi_series - lowest) / (highest - lowest).replace(0, np.nan)) * 100
+    return raw_k.rolling(smooth_k).mean() if smooth_k > 1 else raw_k
 
 
 def main():
-    now_ist = datetime.now(IST)
-    symbols = get_nifty500_symbols()
-    print(f"Fetched {len(symbols)} Nifty 500 symbols from NSE")
+    symbol = sys.argv[1] if len(sys.argv) > 1 else "PIRAMALFIN"
+    yf_symbol = f"{symbol}.NS"
 
-    results, errors = {}, []
-    yf_to_nse = {to_yf_symbol(s): s for s in symbols}
-    all_yf_symbols = list(yf_to_nse.keys())
+    print(f"\n=== {symbol} ({yf_symbol}) ===\n")
 
-    for batch in chunked(all_yf_symbols, CHUNK_SIZE):
-        try:
-            data = yf.download(
-                tickers=" ".join(batch),
-                period=WEEKLY_LOOKBACK,
-                interval="1wk",
-                group_by="ticker",
-                threads=True,
-                progress=False,
-                auto_adjust=False,
-            )
-        except Exception as exc:  # noqa: BLE001
-            print(f"[warn] batch download failed: {exc}")
-            errors.extend(yf_to_nse[s] for s in batch)
-            continue
+    hist = yf.Ticker(yf_symbol).history(period="3y", interval="1wk", auto_adjust=False)
+    hist = hist.dropna(subset=["Open", "High", "Low", "Close"])
+    print(f"Weekly bars fetched: {len(hist)}")
+    print(f"Last 6 weekly closes (with dates):")
+    print(hist["Close"].tail(6).to_string())
 
-        for yf_symbol in batch:
-            nse_symbol = yf_to_nse[yf_symbol]
-            try:
-                if len(batch) == 1:
-                    hist = data
-                else:
-                    hist = data[yf_symbol]
-                results[nse_symbol] = analyze_one(nse_symbol, hist)
-            except Exception as exc:  # noqa: BLE001
-                print(f"[warn] {nse_symbol}: {exc}")
-                errors.append(nse_symbol)
+    close = hist["Close"]
 
-        time.sleep(CHUNK_PAUSE_SEC)
+    print("\n--- RSI(14) — Wilder's smoothing (what our screener currently uses) ---")
+    r_wilder = rsi_wilder(close, 14)
+    print(r_wilder.tail(6).round(2).to_string())
 
-    output = {
-        "asof": now_ist.isoformat(),
-        "universe_size": len(symbols),
-        "stocks": results,
-        "errors": errors,
-    }
+    print("\n--- RSI(14) — Cutler's / simple-average variant ---")
+    r_cutler = rsi_cutler(close, 14)
+    print(r_cutler.tail(6).round(2).to_string())
 
-    with open("nifty500_screener.json", "w") as f:
-        json.dump(output, f, indent=2)
+    print("\n--- StochRSI(14) from Wilder RSI, unsmoothed ---")
+    srsi_wilder = stoch_rsi(r_wilder, 14, smooth_k=1)
+    print(srsi_wilder.tail(6).round(2).to_string())
 
-    buy = sum(1 for v in results.values() if v["signal"] == "buy")
-    sell = sum(1 for v in results.values() if v["signal"] == "sell")
-    print(f"Analyzed {len(results)}/{len(symbols)} · buy={buy} · sell={sell} · errors={len(errors)}")
+    print("\n--- StochRSI(14) from Wilder RSI, 3-period smoothed K ---")
+    srsi_wilder_smooth = stoch_rsi(r_wilder, 14, smooth_k=3)
+    print(srsi_wilder_smooth.tail(6).round(2).to_string())
+
+    print("\n--- StochRSI(14) from Cutler RSI, unsmoothed ---")
+    srsi_cutler = stoch_rsi(r_cutler, 14, smooth_k=1)
+    print(srsi_cutler.tail(6).round(2).to_string())
+
+    print("\n--- StochRSI(14) from Cutler RSI, 3-period smoothed K ---")
+    srsi_cutler_smooth = stoch_rsi(r_cutler, 14, smooth_k=3)
+    print(srsi_cutler_smooth.tail(6).round(2).to_string())
+
+    print(f"\n>>> Our screener currently reports (Wilder, unsmoothed): {srsi_wilder.iloc[-1]:.1f}")
+    print(">>> Compare all FOUR variants above against Chartink's weekly StochRSI(14) value.")
+    print(">>> Whichever variant matches tells us the fix needed.\n")
 
 
 if __name__ == "__main__":
