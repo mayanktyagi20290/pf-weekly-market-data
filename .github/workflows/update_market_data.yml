@@ -1,0 +1,38 @@
+name: Update Market Data
+
+on:
+  schedule:
+    # Every 15 min, ~9:00-16:00 IST (03:30-10:30 UTC), Mon-Fri.
+    # Wider than market hours (9:15-15:30) on purpose — harmless outside
+    # market hours since yfinance just returns the last traded/closed values.
+    - cron: "*/15 3-10 * * 1-5"
+  workflow_dispatch: {}   # lets you trigger a manual sync from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-market-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install yfinance pandas numpy pytz
+
+      - name: Fetch CMP + weekly trend + StochRSI
+        run: python fetch_market_data.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add market_data.json
+          git diff --staged --quiet || git commit -m "Update market data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
