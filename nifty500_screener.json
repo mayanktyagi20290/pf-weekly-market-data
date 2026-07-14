@@ -1,0 +1,4507 @@
+{
+  "asof": "2026-07-14T23:22:20.602359+05:30",
+  "universe_size": 500,
+  "stocks": {
+    "360ONE": {
+      "cmp": 1098.8,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 45.2,
+      "signal": "fresh_sell"
+    },
+    "3MINDIA": {
+      "cmp": 36540.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "AADHARHFC": {
+      "cmp": 518.95,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 48.2,
+      "signal": "fresh_sell"
+    },
+    "AARTIIND": {
+      "cmp": 483.05,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 34.0,
+      "signal": "continuing_up"
+    },
+    "AAVAS": {
+      "cmp": 1447.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 56.8,
+      "signal": "continuing_up"
+    },
+    "ABB": {
+      "cmp": 6892.0,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 6.8,
+      "signal": "continuing_down"
+    },
+    "ABBOTINDIA": {
+      "cmp": 27500.0,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 98.1,
+      "signal": "continuing_up"
+    },
+    "ABCAPITAL": {
+      "cmp": 399.25,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 70.3,
+      "signal": "continuing_up"
+    },
+    "ABDL": {
+      "cmp": 622.25,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 51.5,
+      "signal": "fresh_sell"
+    },
+    "ABFRL": {
+      "cmp": 58.93,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 24.9,
+      "signal": "continuing_down"
+    },
+    "ABLBL": {
+      "cmp": 97.24,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 17.5,
+      "signal": "continuing_down"
+    },
+    "ABREL": {
+      "cmp": 1422.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 89.9,
+      "signal": "continuing_up"
+    },
+    "ABSLAMC": {
+      "cmp": 1143.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 31.0,
+      "signal": "fresh_sell"
+    },
+    "ACC": {
+      "cmp": 1361.9,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 71.3,
+      "signal": "fresh_sell"
+    },
+    "ACE": {
+      "cmp": 964.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 67.1,
+      "signal": "fresh_sell"
+    },
+    "ACMESOLAR": {
+      "cmp": 384.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 93.9,
+      "signal": "continuing_up"
+    },
+    "ACUTAAS": {
+      "cmp": 3459.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 38.4,
+      "signal": "fresh_sell"
+    },
+    "ADANIENSOL": {
+      "cmp": 1690.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 98.0,
+      "signal": "continuing_up"
+    },
+    "ADANIENT": {
+      "cmp": 3188.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 87.5,
+      "signal": "continuing_up"
+    },
+    "ADANIGREEN": {
+      "cmp": 1604.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 94.2,
+      "signal": "continuing_up"
+    },
+    "ADANIPORTS": {
+      "cmp": 1821.9,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 40.8,
+      "signal": "fresh_sell"
+    },
+    "ADANIPOWER": {
+      "cmp": 226.17,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 13.8,
+      "signal": "continuing_down"
+    },
+    "AEGISLOG": {
+      "cmp": 1222.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 71.9,
+      "signal": "continuing_up"
+    },
+    "AEGISVOPAK": {
+      "cmp": 280.64,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 96.8,
+      "signal": "continuing_up"
+    },
+    "AFCONS": {
+      "cmp": 292.7,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 10.1,
+      "signal": "continuing_down"
+    },
+    "AFFLE": {
+      "cmp": 1517.0,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "AIAENG": {
+      "cmp": 4760.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 68.3,
+      "signal": "continuing_down"
+    },
+    "AIIL": {
+      "cmp": 511.05,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 57.9,
+      "signal": "continuing_down"
+    },
+    "AJANTPHARM": {
+      "cmp": 3408.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "ALKEM": {
+      "cmp": 5601.5,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 82.2,
+      "signal": "continuing_up"
+    },
+    "AMBER": {
+      "cmp": 7786.5,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 20.8,
+      "signal": "fresh_buy"
+    },
+    "AMBUJACEM": {
+      "cmp": 429.8,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 61.6,
+      "signal": "fresh_sell"
+    },
+    "ANANDRATHI": {
+      "cmp": 2080.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 64.5,
+      "signal": "continuing_up"
+    },
+    "ANANTRAJ": {
+      "cmp": 573.65,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 88.7,
+      "signal": "continuing_up"
+    },
+    "ANGELONE": {
+      "cmp": 333.55,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 0.0,
+      "signal": "fresh_sell"
+    },
+    "ANTHEM": {
+      "cmp": 749.95,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "ANURAS": {
+      "cmp": 1263.8,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 7.2,
+      "signal": "continuing_down"
+    },
+    "APARINDS": {
+      "cmp": 13595.0,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "APLAPOLLO": {
+      "cmp": 1799.0,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 8.4,
+      "signal": "fresh_sell"
+    },
+    "APOLLOHOSP": {
+      "cmp": 8900.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 95.1,
+      "signal": "continuing_up"
+    },
+    "APOLLOTYRE": {
+      "cmp": 425.85,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 73.3,
+      "signal": "fresh_sell"
+    },
+    "APTUS": {
+      "cmp": 290.15,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "ARE&M": {
+      "cmp": 894.9,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "ASAHIINDIA": {
+      "cmp": 923.1,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "ASHOKLEY": {
+      "cmp": 155.19,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 45.6,
+      "signal": "fresh_sell"
+    },
+    "ASIANPAINT": {
+      "cmp": 2641.0,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 32.0,
+      "signal": "fresh_sell"
+    },
+    "ASTERDM": {
+      "cmp": 813.2,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 56.9,
+      "signal": "continuing_up"
+    },
+    "ASTRAL": {
+      "cmp": 1358.5,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 12.6,
+      "signal": "continuing_down"
+    },
+    "ATGL": {
+      "cmp": 721.6,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 41.2,
+      "signal": "continuing_up"
+    },
+    "ATHERENERG": {
+      "cmp": 1201.8,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 78.2,
+      "signal": "continuing_up"
+    },
+    "ATUL": {
+      "cmp": 6072.0,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "AUBANK": {
+      "cmp": 1038.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 37.5,
+      "signal": "continuing_up"
+    },
+    "AUROPHARMA": {
+      "cmp": 1552.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 23.2,
+      "signal": "fresh_sell"
+    },
+    "AWL": {
+      "cmp": 189.27,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 63.8,
+      "signal": "continuing_up"
+    },
+    "AXISBANK": {
+      "cmp": 1317.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 38.4,
+      "signal": "continuing_down"
+    },
+    "BAJAJ-AUTO": {
+      "cmp": 10166.0,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 33.7,
+      "signal": "continuing_up"
+    },
+    "BAJAJFINSV": {
+      "cmp": 1869.2,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 78.8,
+      "signal": "continuing_up"
+    },
+    "BAJAJHFL": {
+      "cmp": 87.32,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 58.1,
+      "signal": "fresh_sell"
+    },
+    "BAJAJHLDNG": {
+      "cmp": 10486.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 35.7,
+      "signal": "fresh_sell"
+    },
+    "BAJFINANCE": {
+      "cmp": 1006.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 77.6,
+      "signal": "continuing_up"
+    },
+    "BALKRISIND": {
+      "cmp": 2165.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 64.9,
+      "signal": "fresh_sell"
+    },
+    "BALRAMCHIN": {
+      "cmp": 596.3,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "BANDHANBNK": {
+      "cmp": 207.87,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 48.5,
+      "signal": "continuing_up"
+    },
+    "BANKBARODA": {
+      "cmp": 246.6,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "BANKINDIA": {
+      "cmp": 141.87,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 23.4,
+      "signal": "continuing_down"
+    },
+    "BATAINDIA": {
+      "cmp": 683.25,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 53.2,
+      "signal": "continuing_down"
+    },
+    "BAYERCROP": {
+      "cmp": 4077.0,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "BBTC": {
+      "cmp": 1497.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 36.4,
+      "signal": "continuing_down"
+    },
+    "BDL": {
+      "cmp": 1277.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 37.9,
+      "signal": "fresh_sell"
+    },
+    "BEL": {
+      "cmp": 410.1,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 11.0,
+      "signal": "fresh_sell"
+    },
+    "BELRISE": {
+      "cmp": 232.34,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 15.1,
+      "signal": "continuing_down"
+    },
+    "BEML": {
+      "cmp": 1855.5,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 56.7,
+      "signal": "continuing_up"
+    },
+    "BERGEPAINT": {
+      "cmp": 489.1,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 20.1,
+      "signal": "continuing_down"
+    },
+    "BHARATFORG": {
+      "cmp": 2119.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 72.5,
+      "signal": "continuing_up"
+    },
+    "BHARTIARTL": {
+      "cmp": 1936.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "BHARTIHEXA": {
+      "cmp": 1621.8,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "BHEL": {
+      "cmp": 403.9,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 19.6,
+      "signal": "fresh_buy"
+    },
+    "BIKAJI": {
+      "cmp": 636.15,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 1.0,
+      "signal": "continuing_down"
+    },
+    "BIOCON": {
+      "cmp": 437.3,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "1st white",
+      "stochrsi": 89.9,
+      "signal": "fresh_buy"
+    },
+    "BLS": {
+      "cmp": 233.4,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "BLUEDART": {
+      "cmp": 4903.6,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 34.9,
+      "signal": "fresh_buy"
+    },
+    "BLUEJET": {
+      "cmp": 605.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 88.5,
+      "signal": "continuing_up"
+    },
+    "BLUESTARCO": {
+      "cmp": 1746.2,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 92.4,
+      "signal": "fresh_buy"
+    },
+    "BOSCHLTD": {
+      "cmp": 41460.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 87.0,
+      "signal": "continuing_up"
+    },
+    "BPCL": {
+      "cmp": 305.35,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 81.9,
+      "signal": "fresh_sell"
+    },
+    "BRIGADE": {
+      "cmp": 556.25,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 83.7,
+      "signal": "continuing_up"
+    },
+    "BRITANNIA": {
+      "cmp": 5283.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 54.1,
+      "signal": "fresh_sell"
+    },
+    "BSE": {
+      "cmp": 3792.7,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "BSOFT": {
+      "cmp": 289.05,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 12.6,
+      "signal": "continuing_down"
+    },
+    "CAMS": {
+      "cmp": 766.45,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "CANBK": {
+      "cmp": 125.74,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "CANFINHOME": {
+      "cmp": 898.05,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 73.4,
+      "signal": "continuing_up"
+    },
+    "CANHLIFE": {
+      "cmp": 146.89,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 47.7,
+      "signal": "continuing_up"
+    },
+    "CAPLIPOINT": {
+      "cmp": 2658.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "CARBORUNIV": {
+      "cmp": 1066.2,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "CARTRADE": {
+      "cmp": 2895.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "CASTROLIND": {
+      "cmp": 183.58,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 49.7,
+      "signal": "continuing_down"
+    },
+    "CCL": {
+      "cmp": 1229.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "CDSL": {
+      "cmp": 1428.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 98.5,
+      "signal": "continuing_up"
+    },
+    "CEATLTD": {
+      "cmp": 3719.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 75.8,
+      "signal": "continuing_up"
+    },
+    "CEMPRO": {
+      "cmp": 1596.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "CENTRALBK": {
+      "cmp": 32.23,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 54.0,
+      "signal": "continuing_down"
+    },
+    "CESC": {
+      "cmp": 159.16,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "CGCL": {
+      "cmp": 257.32,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "CGPOWER": {
+      "cmp": 913.85,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 14.4,
+      "signal": "continuing_down"
+    },
+    "CHALET": {
+      "cmp": 854.2,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "CHAMBLFERT": {
+      "cmp": 454.2,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 23.9,
+      "signal": "continuing_down"
+    },
+    "CHENNPETRO": {
+      "cmp": 1110.9,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 19.6,
+      "signal": "continuing_up"
+    },
+    "CHOICEIN": {
+      "cmp": 810.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 82.4,
+      "signal": "continuing_up"
+    },
+    "CHOLAFIN": {
+      "cmp": 1771.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 83.3,
+      "signal": "continuing_up"
+    },
+    "CHOLAHLDNG": {
+      "cmp": 1586.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 46.2,
+      "signal": "fresh_sell"
+    },
+    "CIEINDIA": {
+      "cmp": 458.55,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 16.0,
+      "signal": "fresh_sell"
+    },
+    "CIPLA": {
+      "cmp": 1438.1,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 90.0,
+      "signal": "fresh_sell"
+    },
+    "CLEAN": {
+      "cmp": 758.05,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 27.7,
+      "signal": "continuing_down"
+    },
+    "COALINDIA": {
+      "cmp": 430.6,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 2.3,
+      "signal": "continuing_down"
+    },
+    "COCHINSHIP": {
+      "cmp": 1390.8,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "COFORGE": {
+      "cmp": 1534.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "COHANCE": {
+      "cmp": 438.8,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 76.2,
+      "signal": "continuing_up"
+    },
+    "COLPAL": {
+      "cmp": 2008.7,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 15.6,
+      "signal": "fresh_sell"
+    },
+    "CONCOR": {
+      "cmp": 493.15,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "1st white",
+      "stochrsi": 62.0,
+      "signal": "fresh_buy"
+    },
+    "CONCORDBIO": {
+      "cmp": 1327.6,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 92.6,
+      "signal": "continuing_up"
+    },
+    "COROMANDEL": {
+      "cmp": 2071.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "CPPLUS": {
+      "cmp": 3622.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 41.8,
+      "signal": "continuing_up"
+    },
+    "CRAFTSMAN": {
+      "cmp": 9158.0,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 32.4,
+      "signal": "continuing_down"
+    },
+    "CREDITACC": {
+      "cmp": 1469.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 53.7,
+      "signal": "continuing_up"
+    },
+    "CRISIL": {
+      "cmp": 4053.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "1st white",
+      "stochrsi": 69.6,
+      "signal": "fresh_buy"
+    },
+    "CROMPTON": {
+      "cmp": 261.0,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 9.1,
+      "signal": "continuing_down"
+    },
+    "CUB": {
+      "cmp": 221.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 76.5,
+      "signal": "continuing_up"
+    },
+    "CUMMINSIND": {
+      "cmp": 5493.5,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "CYIENT": {
+      "cmp": 852.75,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 29.5,
+      "signal": "continuing_down"
+    },
+    "DABUR": {
+      "cmp": 434.45,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 31.3,
+      "signal": "fresh_sell"
+    },
+    "DALBHARAT": {
+      "cmp": 1761.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 63.7,
+      "signal": "continuing_up"
+    },
+    "DATAPATTNS": {
+      "cmp": 4214.5,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "DCMSHRIRAM": {
+      "cmp": 1028.3,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 9.8,
+      "signal": "fresh_sell"
+    },
+    "DEEPAKFERT": {
+      "cmp": 1542.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 42.9,
+      "signal": "fresh_sell"
+    },
+    "DEEPAKNTR": {
+      "cmp": 1669.3,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 37.7,
+      "signal": "fresh_buy"
+    },
+    "DELHIVERY": {
+      "cmp": 512.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 83.9,
+      "signal": "continuing_up"
+    },
+    "DEVYANI": {
+      "cmp": 111.35,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 50.7,
+      "signal": "continuing_down"
+    },
+    "DIVISLAB": {
+      "cmp": 7188.5,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "DIXON": {
+      "cmp": 13365.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 97.4,
+      "signal": "continuing_up"
+    },
+    "DLF": {
+      "cmp": 671.45,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 85.5,
+      "signal": "continuing_up"
+    },
+    "DMART": {
+      "cmp": 3915.9,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "DOMS": {
+      "cmp": 2295.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 72.9,
+      "signal": "continuing_up"
+    },
+    "DRREDDY": {
+      "cmp": 1246.2,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 1.4,
+      "signal": "continuing_down"
+    },
+    "ECLERX": {
+      "cmp": 1718.3,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "EICHERMOT": {
+      "cmp": 7279.5,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 32.3,
+      "signal": "continuing_down"
+    },
+    "EIDPARRY": {
+      "cmp": 779.0,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 97.9,
+      "signal": "continuing_up"
+    },
+    "EIHOTEL": {
+      "cmp": 336.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "ELECON": {
+      "cmp": 486.55,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 28.9,
+      "signal": "continuing_down"
+    },
+    "ELGIEQUIP": {
+      "cmp": 576.65,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 28.3,
+      "signal": "continuing_down"
+    },
+    "EMAMILTD": {
+      "cmp": 420.95,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 94.9,
+      "signal": "continuing_up"
+    },
+    "EMCURE": {
+      "cmp": 1810.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 34.0,
+      "signal": "fresh_sell"
+    },
+    "EMMVEE": {
+      "cmp": 334.15,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 58.4,
+      "signal": "fresh_sell"
+    },
+    "ENDURANCE": {
+      "cmp": 2681.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 77.1,
+      "signal": "continuing_up"
+    },
+    "ENGINERSIN": {
+      "cmp": 228.68,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 3.5,
+      "signal": "continuing_down"
+    },
+    "ENRIN": {
+      "cmp": 3389.6,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 6.9,
+      "signal": "continuing_down"
+    },
+    "ERIS": {
+      "cmp": 1453.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "1st white",
+      "stochrsi": 95.7,
+      "signal": "fresh_buy"
+    },
+    "ESCORTS": {
+      "cmp": 2928.4,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 58.6,
+      "signal": "continuing_up"
+    },
+    "ETERNAL": {
+      "cmp": 286.15,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 91.8,
+      "signal": "continuing_up"
+    },
+    "EXIDEIND": {
+      "cmp": 419.45,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 91.0,
+      "signal": "continuing_up"
+    },
+    "FACT": {
+      "cmp": 844.35,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "FEDERALBNK": {
+      "cmp": 327.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 89.0,
+      "signal": "continuing_up"
+    },
+    "FINCABLES": {
+      "cmp": 1032.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "FIRSTCRY": {
+      "cmp": 214.83,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 22.8,
+      "signal": "continuing_down"
+    },
+    "FIVESTAR": {
+      "cmp": 547.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 96.3,
+      "signal": "continuing_up"
+    },
+    "FLUOROCHEM": {
+      "cmp": 3923.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 87.1,
+      "signal": "continuing_up"
+    },
+    "FORCEMOT": {
+      "cmp": 17660.0,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "FORTIS": {
+      "cmp": 969.75,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 55.5,
+      "signal": "fresh_sell"
+    },
+    "FSL": {
+      "cmp": 264.15,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 98.3,
+      "signal": "continuing_up"
+    },
+    "GABRIEL": {
+      "cmp": 1248.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 98.5,
+      "signal": "continuing_up"
+    },
+    "GAIL": {
+      "cmp": 171.51,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 73.6,
+      "signal": "fresh_sell"
+    },
+    "GALLANTT": {
+      "cmp": 686.05,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 10.9,
+      "signal": "fresh_buy"
+    },
+    "GESHIP": {
+      "cmp": 1418.8,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 2.5,
+      "signal": "continuing_down"
+    },
+    "GICRE": {
+      "cmp": 365.2,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 13.7,
+      "signal": "continuing_down"
+    },
+    "GILLETTE": {
+      "cmp": 7831.5,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 74.2,
+      "signal": "continuing_up"
+    },
+    "GLAND": {
+      "cmp": 2488.3,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 97.0,
+      "signal": "continuing_up"
+    },
+    "GLAXO": {
+      "cmp": 2463.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "GLENMARK": {
+      "cmp": 2305.1,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 42.5,
+      "signal": "continuing_up"
+    },
+    "GMDCLTD": {
+      "cmp": 586.0,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "GMRAIRPORT": {
+      "cmp": 113.38,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "GODFRYPHLP": {
+      "cmp": 2070.5,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "GODIGIT": {
+      "cmp": 307.8,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 64.6,
+      "signal": "continuing_down"
+    },
+    "GODREJCP": {
+      "cmp": 1061.6,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 77.1,
+      "signal": "fresh_sell"
+    },
+    "GODREJIND": {
+      "cmp": 1336.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 74.8,
+      "signal": "continuing_up"
+    },
+    "GODREJPROP": {
+      "cmp": 2107.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 92.2,
+      "signal": "continuing_up"
+    },
+    "GPIL": {
+      "cmp": 251.85,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "GRANULES": {
+      "cmp": 895.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "GRAPHITE": {
+      "cmp": 621.0,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 10.9,
+      "signal": "continuing_down"
+    },
+    "GRASIM": {
+      "cmp": 3113.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 57.3,
+      "signal": "fresh_sell"
+    },
+    "GRAVITA": {
+      "cmp": 1811.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 78.8,
+      "signal": "continuing_up"
+    },
+    "GROWW": {
+      "cmp": 203.79,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 24.6,
+      "signal": "continuing_up"
+    },
+    "GRSE": {
+      "cmp": 2616.6,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "GVT&D": {
+      "cmp": 4498.6,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 2.9,
+      "signal": "continuing_down"
+    },
+    "HAL": {
+      "cmp": 4442.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 39.9,
+      "signal": "continuing_up"
+    },
+    "HAVELLS": {
+      "cmp": 1187.3,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 53.4,
+      "signal": "fresh_sell"
+    },
+    "HBLENGINE": {
+      "cmp": 743.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "HCLTECH": {
+      "cmp": 1166.7,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 63.0,
+      "signal": "continuing_up"
+    },
+    "HDBFS": {
+      "cmp": 743.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 87.0,
+      "signal": "continuing_up"
+    },
+    "HDFCAMC": {
+      "cmp": 2659.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 43.6,
+      "signal": "fresh_sell"
+    },
+    "HDFCBANK": {
+      "cmp": 809.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 84.2,
+      "signal": "continuing_up"
+    },
+    "HDFCLIFE": {
+      "cmp": 555.2,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 37.8,
+      "signal": "continuing_down"
+    },
+    "HEG": {
+      "cmp": 566.45,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 39.3,
+      "signal": "continuing_up"
+    },
+    "HEROMOTOCO": {
+      "cmp": 4878.3,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 23.7,
+      "signal": "continuing_up"
+    },
+    "HEXT": {
+      "cmp": 558.65,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "HFCL": {
+      "cmp": 212.78,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 51.8,
+      "signal": "continuing_up"
+    },
+    "HINDALCO": {
+      "cmp": 974.3,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 10.7,
+      "signal": "continuing_down"
+    },
+    "HINDCOPPER": {
+      "cmp": 491.65,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "HINDPETRO": {
+      "cmp": 386.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 41.3,
+      "signal": "continuing_down"
+    },
+    "HINDUNILVR": {
+      "cmp": 2120.2,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 10.2,
+      "signal": "continuing_down"
+    },
+    "HINDZINC": {
+      "cmp": 527.9,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 10.1,
+      "signal": "continuing_down"
+    },
+    "HOMEFIRST": {
+      "cmp": 1223.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "HONASA": {
+      "cmp": 474.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "HONAUT": {
+      "cmp": 38060.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 79.6,
+      "signal": "fresh_sell"
+    },
+    "HSCL": {
+      "cmp": 671.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 55.8,
+      "signal": "continuing_down"
+    },
+    "HUDCO": {
+      "cmp": 207.85,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 14.7,
+      "signal": "fresh_sell"
+    },
+    "HYUNDAI": {
+      "cmp": 1959.7,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 83.1,
+      "signal": "fresh_sell"
+    },
+    "ICICIAMC": {
+      "cmp": 3165.8,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 1.0,
+      "signal": "continuing_down"
+    },
+    "ICICIBANK": {
+      "cmp": 1407.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 95.7,
+      "signal": "continuing_up"
+    },
+    "ICICIGI": {
+      "cmp": 1788.1,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 62.3,
+      "signal": "fresh_sell"
+    },
+    "ICICIPRULI": {
+      "cmp": 503.95,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 71.9,
+      "signal": "continuing_up"
+    },
+    "IDBI": {
+      "cmp": 86.54,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "1st white",
+      "stochrsi": 100.0,
+      "signal": "fresh_buy"
+    },
+    "IDEA": {
+      "cmp": 13.83,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 56.1,
+      "signal": "continuing_down"
+    },
+    "IDFCFIRSTB": {
+      "cmp": 79.27,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 83.6,
+      "signal": "continuing_up"
+    },
+    "IEX": {
+      "cmp": 117.07,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "IFCI": {
+      "cmp": 74.52,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 25.3,
+      "signal": "continuing_down"
+    },
+    "IGIL": {
+      "cmp": 343.75,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 13.3,
+      "signal": "continuing_down"
+    },
+    "IGL": {
+      "cmp": 151.79,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 20.5,
+      "signal": "continuing_down"
+    },
+    "IIFL": {
+      "cmp": 541.5,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 88.9,
+      "signal": "continuing_up"
+    },
+    "IKS": {
+      "cmp": 1879.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 83.3,
+      "signal": "continuing_up"
+    },
+    "INDGN": {
+      "cmp": 506.85,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 23.1,
+      "signal": "continuing_down"
+    },
+    "INDHOTEL": {
+      "cmp": 733.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 77.4,
+      "signal": "continuing_up"
+    },
+    "INDIACEM": {
+      "cmp": 376.95,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 7.5,
+      "signal": "continuing_down"
+    },
+    "INDIAMART": {
+      "cmp": 1921.0,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 31.4,
+      "signal": "continuing_down"
+    },
+    "INDIANB": {
+      "cmp": 833.45,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 29.1,
+      "signal": "fresh_buy"
+    },
+    "INDIGO": {
+      "cmp": 5108.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 66.0,
+      "signal": "fresh_sell"
+    },
+    "INDUSINDBK": {
+      "cmp": 997.35,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 81.0,
+      "signal": "continuing_up"
+    },
+    "INDUSTOWER": {
+      "cmp": 405.25,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 43.1,
+      "signal": "fresh_buy"
+    },
+    "INFY": {
+      "cmp": 1092.9,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 75.1,
+      "signal": "fresh_buy"
+    },
+    "INOXWIND": {
+      "cmp": 79.05,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "INTELLECT": {
+      "cmp": 757.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 78.5,
+      "signal": "continuing_up"
+    },
+    "IOB": {
+      "cmp": 33.68,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 41.3,
+      "signal": "continuing_down"
+    },
+    "IOC": {
+      "cmp": 137.05,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 33.7,
+      "signal": "continuing_down"
+    },
+    "IPCALAB": {
+      "cmp": 1840.4,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "IRB": {
+      "cmp": 20.19,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 1.6,
+      "signal": "continuing_down"
+    },
+    "IRCON": {
+      "cmp": 129.52,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "IRCTC": {
+      "cmp": 496.95,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "IREDA": {
+      "cmp": 122.08,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 3.0,
+      "signal": "continuing_down"
+    },
+    "IRFC": {
+      "cmp": 88.71,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "ITC": {
+      "cmp": 275.55,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 13.6,
+      "signal": "continuing_down"
+    },
+    "ITCHOTELS": {
+      "cmp": 182.07,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 83.3,
+      "signal": "continuing_up"
+    },
+    "ITI": {
+      "cmp": 286.55,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "J&KBANK": {
+      "cmp": 177.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 41.6,
+      "signal": "continuing_up"
+    },
+    "JAINREC": {
+      "cmp": 330.0,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 7.3,
+      "signal": "continuing_down"
+    },
+    "JBCHEPHARM": {
+      "cmp": 2487.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "JBMA": {
+      "cmp": 684.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 35.1,
+      "signal": "continuing_down"
+    },
+    "JINDALSAW": {
+      "cmp": 258.85,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 38.5,
+      "signal": "continuing_up"
+    },
+    "JINDALSTEL": {
+      "cmp": 1040.1,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "JIOFIN": {
+      "cmp": 235.97,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 52.0,
+      "signal": "continuing_down"
+    },
+    "JKCEMENT": {
+      "cmp": 5353.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 70.3,
+      "signal": "fresh_sell"
+    },
+    "JKTYRE": {
+      "cmp": 401.95,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 80.6,
+      "signal": "fresh_sell"
+    },
+    "JMFINANCIL": {
+      "cmp": 122.96,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 18.3,
+      "signal": "fresh_sell"
+    },
+    "JPPOWER": {
+      "cmp": 16.66,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "JSL": {
+      "cmp": 721.8,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 54.5,
+      "signal": "continuing_up"
+    },
+    "JSWCEMENT": {
+      "cmp": 136.75,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 63.2,
+      "signal": "continuing_up"
+    },
+    "JSWDULUX": {
+      "cmp": 2889.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 3.3,
+      "signal": "continuing_down"
+    },
+    "JSWENERGY": {
+      "cmp": 557.25,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 25.9,
+      "signal": "continuing_down"
+    },
+    "JSWINFRA": {
+      "cmp": 347.25,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "JSWSTEEL": {
+      "cmp": 1247.7,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 22.2,
+      "signal": "continuing_down"
+    },
+    "JUBLFOOD": {
+      "cmp": 421.5,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 31.6,
+      "signal": "fresh_sell"
+    },
+    "JUBLINGREA": {
+      "cmp": 724.05,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 77.8,
+      "signal": "continuing_up"
+    },
+    "JUBLPHARMA": {
+      "cmp": 974.45,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 61.0,
+      "signal": "continuing_down"
+    },
+    "JWL": {
+      "cmp": 255.15,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "JYOTICNC": {
+      "cmp": 782.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 93.3,
+      "signal": "continuing_up"
+    },
+    "KAJARIACER": {
+      "cmp": 1234.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 93.5,
+      "signal": "continuing_up"
+    },
+    "KALYANKJIL": {
+      "cmp": 529.75,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "KARURVYSYA": {
+      "cmp": 299.55,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 67.1,
+      "signal": "continuing_up"
+    },
+    "KAYNES": {
+      "cmp": 3288.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 25.6,
+      "signal": "continuing_up"
+    },
+    "KEC": {
+      "cmp": 489.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 38.5,
+      "signal": "continuing_down"
+    },
+    "KEI": {
+      "cmp": 5120.5,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "KFINTECH": {
+      "cmp": 898.25,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 93.9,
+      "signal": "continuing_up"
+    },
+    "KIMS": {
+      "cmp": 806.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 60.4,
+      "signal": "fresh_sell"
+    },
+    "KIRLOSENG": {
+      "cmp": 2362.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 8.4,
+      "signal": "continuing_up"
+    },
+    "KOTAKBANK": {
+      "cmp": 378.65,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 31.7,
+      "signal": "continuing_down"
+    },
+    "KPIL": {
+      "cmp": 1299.2,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "KPITTECH": {
+      "cmp": 555.6,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.7,
+      "signal": "continuing_down"
+    },
+    "KPRMILL": {
+      "cmp": 1116.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 52.9,
+      "signal": "continuing_down"
+    },
+    "LALPATHLAB": {
+      "cmp": 1744.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 94.8,
+      "signal": "continuing_up"
+    },
+    "LATENTVIEW": {
+      "cmp": 300.25,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 69.5,
+      "signal": "fresh_buy"
+    },
+    "LAURUSLABS": {
+      "cmp": 1560.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 97.4,
+      "signal": "continuing_up"
+    },
+    "LEMONTREE": {
+      "cmp": 114.86,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 67.0,
+      "signal": "fresh_sell"
+    },
+    "LENSKART": {
+      "cmp": 537.9,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 64.7,
+      "signal": "continuing_up"
+    },
+    "LGEINDIA": {
+      "cmp": 1527.3,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 25.8,
+      "signal": "continuing_down"
+    },
+    "LICHSGFIN": {
+      "cmp": 549.6,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 25.7,
+      "signal": "continuing_down"
+    },
+    "LICI": {
+      "cmp": 435.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 77.6,
+      "signal": "continuing_up"
+    },
+    "LINDEINDIA": {
+      "cmp": 7081.5,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 6.3,
+      "signal": "continuing_down"
+    },
+    "LLOYDSME": {
+      "cmp": 1825.5,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 64.5,
+      "signal": "continuing_up"
+    },
+    "LODHA": {
+      "cmp": 1147.25,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 78.1,
+      "signal": "continuing_up"
+    },
+    "LT": {
+      "cmp": 3848.7,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "LTF": {
+      "cmp": 315.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 72.7,
+      "signal": "continuing_up"
+    },
+    "LTFOODS": {
+      "cmp": 380.65,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 7.9,
+      "signal": "continuing_up"
+    },
+    "LTM": {
+      "cmp": 4062.8,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 79.4,
+      "signal": "continuing_up"
+    },
+    "LTTS": {
+      "cmp": 3293.1,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 29.6,
+      "signal": "fresh_buy"
+    },
+    "LUPIN": {
+      "cmp": 2469.2,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 78.6,
+      "signal": "continuing_up"
+    },
+    "M&M": {
+      "cmp": 3093.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 45.1,
+      "signal": "fresh_sell"
+    },
+    "M&MFIN": {
+      "cmp": 325.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 68.8,
+      "signal": "continuing_up"
+    },
+    "MAHABANK": {
+      "cmp": 79.47,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "MANAPPURAM": {
+      "cmp": 328.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 66.9,
+      "signal": "continuing_up"
+    },
+    "MANKIND": {
+      "cmp": 2531.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 91.2,
+      "signal": "continuing_up"
+    },
+    "MAPMYINDIA": {
+      "cmp": 1178.9,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "MARICO": {
+      "cmp": 848.25,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 81.2,
+      "signal": "continuing_up"
+    },
+    "MARUTI": {
+      "cmp": 13489.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 44.4,
+      "signal": "fresh_sell"
+    },
+    "MAXHEALTH": {
+      "cmp": 1092.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 62.5,
+      "signal": "fresh_sell"
+    },
+    "MAZDOCK": {
+      "cmp": 2359.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "MCX": {
+      "cmp": 2891.3,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "1st red",
+      "week4": "1st white",
+      "stochrsi": 14.0,
+      "signal": "fresh_buy"
+    },
+    "MEDANTA": {
+      "cmp": 1320.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 80.6,
+      "signal": "continuing_up"
+    },
+    "MEESHO": {
+      "cmp": 188.81,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 7.9,
+      "signal": "continuing_up"
+    },
+    "MFSL": {
+      "cmp": 1611.6,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 29.2,
+      "signal": "fresh_buy"
+    },
+    "MGL": {
+      "cmp": 1123.3,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 40.8,
+      "signal": "continuing_down"
+    },
+    "MINDACORP": {
+      "cmp": 674.65,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 72.7,
+      "signal": "continuing_up"
+    },
+    "MMTC": {
+      "cmp": 64.19,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "MOTHERSON": {
+      "cmp": 142.06,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 36.1,
+      "signal": "continuing_down"
+    },
+    "MOTILALOFS": {
+      "cmp": 967.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 88.2,
+      "signal": "continuing_up"
+    },
+    "MPHASIS": {
+      "cmp": 2372.3,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "MRF": {
+      "cmp": 131025.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 70.2,
+      "signal": "fresh_sell"
+    },
+    "MRPL": {
+      "cmp": 156.96,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 41.9,
+      "signal": "continuing_up"
+    },
+    "MSUMI": {
+      "cmp": 39.61,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 64.4,
+      "signal": "fresh_sell"
+    },
+    "MUTHOOTFIN": {
+      "cmp": 3016.4,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 8.2,
+      "signal": "fresh_sell"
+    },
+    "NAM-INDIA": {
+      "cmp": 1192.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 55.0,
+      "signal": "continuing_up"
+    },
+    "NATCOPHARM": {
+      "cmp": 972.25,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 30.0,
+      "signal": "continuing_up"
+    },
+    "NATIONALUM": {
+      "cmp": 364.9,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 23.6,
+      "signal": "fresh_buy"
+    },
+    "NAUKRI": {
+      "cmp": 1187.95,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 94.4,
+      "signal": "continuing_up"
+    },
+    "NAVA": {
+      "cmp": 594.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 4.6,
+      "signal": "continuing_down"
+    },
+    "NAVINFLUOR": {
+      "cmp": 7586.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 74.2,
+      "signal": "continuing_up"
+    },
+    "NBCC": {
+      "cmp": 98.15,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 23.6,
+      "signal": "continuing_down"
+    },
+    "NCC": {
+      "cmp": 141.73,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "NESTLEIND": {
+      "cmp": 1427.1,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 15.0,
+      "signal": "fresh_sell"
+    },
+    "NETWEB": {
+      "cmp": 4398.1,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 8.9,
+      "signal": "continuing_down"
+    },
+    "NEULANDLAB": {
+      "cmp": 18999.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 77.9,
+      "signal": "continuing_up"
+    },
+    "NEWGEN": {
+      "cmp": 554.4,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "NH": {
+      "cmp": 2007.2,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 86.3,
+      "signal": "continuing_up"
+    },
+    "NHPC": {
+      "cmp": 78.77,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 49.9,
+      "signal": "fresh_sell"
+    },
+    "NIACL": {
+      "cmp": 177.24,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 40.3,
+      "signal": "fresh_sell"
+    },
+    "NIVABUPA": {
+      "cmp": 86.17,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 67.4,
+      "signal": "continuing_up"
+    },
+    "NLCINDIA": {
+      "cmp": 303.6,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "NMDC": {
+      "cmp": 84.99,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.8,
+      "signal": "continuing_down"
+    },
+    "NSLNISP": {
+      "cmp": 43.09,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "NTPC": {
+      "cmp": 348.15,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 6.6,
+      "signal": "continuing_down"
+    },
+    "NTPCGREEN": {
+      "cmp": 94.15,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.4,
+      "signal": "continuing_down"
+    },
+    "NUVAMA": {
+      "cmp": 1933.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 86.4,
+      "signal": "continuing_up"
+    },
+    "NUVOCO": {
+      "cmp": 341.4,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 96.1,
+      "signal": "continuing_up"
+    },
+    "NYKAA": {
+      "cmp": 324.45,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 84.4,
+      "signal": "continuing_up"
+    },
+    "OBEROIRLTY": {
+      "cmp": 1916.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 91.0,
+      "signal": "continuing_up"
+    },
+    "OFSS": {
+      "cmp": 11646.0,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 99.6,
+      "signal": "continuing_up"
+    },
+    "OIL": {
+      "cmp": 441.1,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 35.2,
+      "signal": "continuing_up"
+    },
+    "OLAELEC": {
+      "cmp": 39.47,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 7.2,
+      "signal": "continuing_down"
+    },
+    "OLECTRA": {
+      "cmp": 1378.2,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 39.0,
+      "signal": "continuing_down"
+    },
+    "ONESOURCE": {
+      "cmp": 1648.1,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 32.0,
+      "signal": "fresh_buy"
+    },
+    "ONGC": {
+      "cmp": 248.9,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 23.1,
+      "signal": "continuing_up"
+    },
+    "PAGEIND": {
+      "cmp": 40530.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 35.2,
+      "signal": "fresh_sell"
+    },
+    "PARADEEP": {
+      "cmp": 141.48,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 77.1,
+      "signal": "continuing_up"
+    },
+    "PATANJALI": {
+      "cmp": 407.55,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "PAYTM": {
+      "cmp": 1381.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "PCBL": {
+      "cmp": 318.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 89.6,
+      "signal": "continuing_up"
+    },
+    "PERSISTENT": {
+      "cmp": 5129.1,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "PETRONET": {
+      "cmp": 276.05,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 46.6,
+      "signal": "continuing_down"
+    },
+    "PFC": {
+      "cmp": 409.15,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 4.2,
+      "signal": "continuing_down"
+    },
+    "PFIZER": {
+      "cmp": 4664.6,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 63.8,
+      "signal": "continuing_up"
+    },
+    "PGEL": {
+      "cmp": 601.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "PHOENIXLTD": {
+      "cmp": 2132.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 97.0,
+      "signal": "continuing_up"
+    },
+    "PIDILITIND": {
+      "cmp": 1555.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 66.8,
+      "signal": "fresh_sell"
+    },
+    "PIIND": {
+      "cmp": 2537.2,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "PINELABS": {
+      "cmp": 156.92,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 100.0,
+      "signal": "continuing_down"
+    },
+    "PIRAMALFIN": {
+      "cmp": 2152.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 50.1,
+      "signal": "continuing_up"
+    },
+    "PNB": {
+      "cmp": 105.0,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 38.4,
+      "signal": "continuing_down"
+    },
+    "PNBHOUSING": {
+      "cmp": 1095.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 64.1,
+      "signal": "continuing_up"
+    },
+    "POLICYBZR": {
+      "cmp": 1566.9,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 12.5,
+      "signal": "continuing_down"
+    },
+    "POLYCAB": {
+      "cmp": 9532.5,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 31.5,
+      "signal": "continuing_down"
+    },
+    "POLYMED": {
+      "cmp": 1664.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 95.3,
+      "signal": "continuing_up"
+    },
+    "POONAWALLA": {
+      "cmp": 469.25,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 89.8,
+      "signal": "continuing_up"
+    },
+    "POWERGRID": {
+      "cmp": 286.15,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 9.5,
+      "signal": "continuing_down"
+    },
+    "POWERINDIA": {
+      "cmp": 32490.0,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 9.8,
+      "signal": "continuing_down"
+    },
+    "PPLPHARMA": {
+      "cmp": 171.93,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 70.6,
+      "signal": "continuing_up"
+    },
+    "PREMIERENE": {
+      "cmp": 1100.9,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 63.8,
+      "signal": "continuing_up"
+    },
+    "PRESTIGE": {
+      "cmp": 1693.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 85.8,
+      "signal": "continuing_up"
+    },
+    "PTCIL": {
+      "cmp": 17532.0,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 54.2,
+      "signal": "continuing_down"
+    },
+    "PVRINOX": {
+      "cmp": 1011.45,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 70.0,
+      "signal": "continuing_up"
+    },
+    "PWL": {
+      "cmp": 142.56,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 88.6,
+      "signal": "continuing_up"
+    },
+    "RADICO": {
+      "cmp": 4051.2,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 92.1,
+      "signal": "continuing_up"
+    },
+    "RAILTEL": {
+      "cmp": 303.6,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "RAINBOW": {
+      "cmp": 1484.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 94.2,
+      "signal": "continuing_up"
+    },
+    "RAMCOCEM": {
+      "cmp": 928.45,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 76.6,
+      "signal": "continuing_up"
+    },
+    "RBLBANK": {
+      "cmp": 377.95,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 64.8,
+      "signal": "continuing_up"
+    },
+    "RECLTD": {
+      "cmp": 352.45,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 45.1,
+      "signal": "continuing_down"
+    },
+    "REDINGTON": {
+      "cmp": 282.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 89.4,
+      "signal": "continuing_up"
+    },
+    "RELIANCE": {
+      "cmp": 1293.0,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 8.2,
+      "signal": "continuing_down"
+    },
+    "RHIM": {
+      "cmp": 403.75,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 72.0,
+      "signal": "continuing_up"
+    },
+    "RITES": {
+      "cmp": 222.15,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 81.5,
+      "signal": "continuing_up"
+    },
+    "RKFORGE": {
+      "cmp": 553.85,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "RPOWER": {
+      "cmp": 24.52,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "RRKABEL": {
+      "cmp": 2345.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 57.0,
+      "signal": "continuing_down"
+    },
+    "RVNL": {
+      "cmp": 227.31,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 2.7,
+      "signal": "continuing_down"
+    },
+    "SAGILITY": {
+      "cmp": 41.79,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 78.2,
+      "signal": "continuing_up"
+    },
+    "SAIL": {
+      "cmp": 166.45,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "SAILIFE": {
+      "cmp": 1268.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "SAMMAANCAP": {
+      "cmp": 160.49,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 19.7,
+      "signal": "continuing_down"
+    },
+    "SAPPHIRE": {
+      "cmp": 181.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 76.1,
+      "signal": "fresh_sell"
+    },
+    "SARDAEN": {
+      "cmp": 492.55,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "SAREGAMA": {
+      "cmp": 483.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "1st white",
+      "stochrsi": 89.4,
+      "signal": "fresh_buy"
+    },
+    "SBFC": {
+      "cmp": 92.11,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 31.8,
+      "signal": "continuing_down"
+    },
+    "SBICARD": {
+      "cmp": 638.85,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 100.0,
+      "signal": "fresh_buy"
+    },
+    "SBILIFE": {
+      "cmp": 1840.3,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 73.0,
+      "signal": "continuing_up"
+    },
+    "SBIN": {
+      "cmp": 1015.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 43.3,
+      "signal": "fresh_sell"
+    },
+    "SCHAEFFLER": {
+      "cmp": 4139.2,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 23.6,
+      "signal": "continuing_down"
+    },
+    "SCHNEIDER": {
+      "cmp": 1335.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 20.0,
+      "signal": "fresh_sell"
+    },
+    "SCI": {
+      "cmp": 285.2,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.4,
+      "signal": "continuing_down"
+    },
+    "SHREECEM": {
+      "cmp": 26280.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 80.9,
+      "signal": "continuing_up"
+    },
+    "SHRIRAMFIN": {
+      "cmp": 1013.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 46.6,
+      "signal": "fresh_sell"
+    },
+    "SHYAMMETL": {
+      "cmp": 1035.95,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 100.0,
+      "signal": "fresh_buy"
+    },
+    "SIEMENS": {
+      "cmp": 3510.3,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 2.5,
+      "signal": "continuing_down"
+    },
+    "SIGNATURE": {
+      "cmp": 822.55,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 79.6,
+      "signal": "continuing_up"
+    },
+    "SJVN": {
+      "cmp": 70.38,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "SOBHA": {
+      "cmp": 1490.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 86.0,
+      "signal": "continuing_up"
+    },
+    "SOLARINDS": {
+      "cmp": 18287.0,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 33.0,
+      "signal": "continuing_up"
+    },
+    "SONACOMS": {
+      "cmp": 666.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 95.6,
+      "signal": "continuing_up"
+    },
+    "SONATSOFTW": {
+      "cmp": 307.75,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 100.0,
+      "signal": "fresh_buy"
+    },
+    "SPLPETRO": {
+      "cmp": 725.65,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 36.9,
+      "signal": "fresh_sell"
+    },
+    "SRF": {
+      "cmp": 2744.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 80.9,
+      "signal": "fresh_sell"
+    },
+    "STARHEALTH": {
+      "cmp": 597.35,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 86.3,
+      "signal": "continuing_up"
+    },
+    "SUMICHEM": {
+      "cmp": 535.2,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "SUNDARMFIN": {
+      "cmp": 4461.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 57.3,
+      "signal": "fresh_sell"
+    },
+    "SUNPHARMA": {
+      "cmp": 1942.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "SUNTV": {
+      "cmp": 493.85,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 9.1,
+      "signal": "continuing_down"
+    },
+    "SUPREMEIND": {
+      "cmp": 3427.5,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 70.0,
+      "signal": "fresh_buy"
+    },
+    "SUZLON": {
+      "cmp": 52.47,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "SWANCORP": {
+      "cmp": 315.55,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 52.3,
+      "signal": "fresh_sell"
+    },
+    "SWIGGY": {
+      "cmp": 258.8,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 72.2,
+      "signal": "continuing_up"
+    },
+    "SYNGENE": {
+      "cmp": 419.45,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 39.4,
+      "signal": "continuing_down"
+    },
+    "SYRMA": {
+      "cmp": 1421.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 60.1,
+      "signal": "continuing_up"
+    },
+    "TARIL": {
+      "cmp": 337.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "1st white",
+      "stochrsi": 56.1,
+      "signal": "fresh_buy"
+    },
+    "TATACAP": {
+      "cmp": 355.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 80.0,
+      "signal": "continuing_up"
+    },
+    "TATACHEM": {
+      "cmp": 702.25,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 17.8,
+      "signal": "continuing_down"
+    },
+    "TATACOMM": {
+      "cmp": 1848.6,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 48.9,
+      "signal": "continuing_down"
+    },
+    "TATACONSUM": {
+      "cmp": 1097.6,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "TATAELXSI": {
+      "cmp": 3697.3,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 5.8,
+      "signal": "continuing_down"
+    },
+    "TATAINVEST": {
+      "cmp": 668.55,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 3.0,
+      "signal": "continuing_up"
+    },
+    "TATAPOWER": {
+      "cmp": 377.7,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 4.4,
+      "signal": "continuing_down"
+    },
+    "TATASTEEL": {
+      "cmp": 188.27,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "TATATECH": {
+      "cmp": 756.55,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 77.7,
+      "signal": "fresh_buy"
+    },
+    "TBOTEK": {
+      "cmp": 1443.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 71.7,
+      "signal": "continuing_up"
+    },
+    "TCS": {
+      "cmp": 2200.6,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 99.7,
+      "signal": "fresh_buy"
+    },
+    "TECHM": {
+      "cmp": 1484.3,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "TECHNOE": {
+      "cmp": 1039.8,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 8.3,
+      "signal": "continuing_down"
+    },
+    "TEGA": {
+      "cmp": 1668.5,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 42.6,
+      "signal": "continuing_down"
+    },
+    "TEJASNET": {
+      "cmp": 543.25,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 45.7,
+      "signal": "continuing_down"
+    },
+    "TENNIND": {
+      "cmp": 569.15,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 0.0,
+      "signal": "fresh_sell"
+    },
+    "THELEELA": {
+      "cmp": 493.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 83.9,
+      "signal": "continuing_up"
+    },
+    "THERMAX": {
+      "cmp": 4379.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "TIINDIA": {
+      "cmp": 2916.1,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "TIMKEN": {
+      "cmp": 3144.8,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "TITAGARH": {
+      "cmp": 858.7,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 46.9,
+      "signal": "continuing_down"
+    },
+    "TITAN": {
+      "cmp": 4573.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 65.6,
+      "signal": "continuing_up"
+    },
+    "TMCV": {
+      "cmp": 417.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 62.4,
+      "signal": "fresh_sell"
+    },
+    "TMPV": {
+      "cmp": 333.35,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "TORNTPHARM": {
+      "cmp": 4973.5,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "TORNTPOWER": {
+      "cmp": 1465.3,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 26.1,
+      "signal": "fresh_buy"
+    },
+    "TRAVELFOOD": {
+      "cmp": 1319.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "1st white",
+      "stochrsi": 81.2,
+      "signal": "fresh_buy"
+    },
+    "TRENT": {
+      "cmp": 2869.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 35.9,
+      "signal": "continuing_down"
+    },
+    "TRIDENT": {
+      "cmp": 25.28,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 47.0,
+      "signal": "continuing_down"
+    },
+    "TRITURBINE": {
+      "cmp": 607.65,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.8,
+      "signal": "continuing_down"
+    },
+    "TTML": {
+      "cmp": 40.61,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "TVSMOTOR": {
+      "cmp": 3608.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 80.3,
+      "signal": "continuing_up"
+    },
+    "UBL": {
+      "cmp": 1348.7,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 71.1,
+      "signal": "fresh_sell"
+    },
+    "UCOBANK": {
+      "cmp": 26.19,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 53.6,
+      "signal": "continuing_down"
+    },
+    "ULTRACEMCO": {
+      "cmp": 11496.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 65.4,
+      "signal": "fresh_sell"
+    },
+    "UNIONBANK": {
+      "cmp": 170.67,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 36.8,
+      "signal": "fresh_buy"
+    },
+    "UNITDSPR": {
+      "cmp": 1386.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 94.4,
+      "signal": "continuing_up"
+    },
+    "UNOMINDA": {
+      "cmp": 1137.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 71.6,
+      "signal": "continuing_up"
+    },
+    "UPL": {
+      "cmp": 593.15,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 15.8,
+      "signal": "continuing_down"
+    },
+    "URBANCO": {
+      "cmp": 132.01,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 59.4,
+      "signal": "continuing_up"
+    },
+    "USHAMART": {
+      "cmp": 497.1,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 19.1,
+      "signal": "continuing_up"
+    },
+    "UTIAMC": {
+      "cmp": 985.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 82.3,
+      "signal": "continuing_up"
+    },
+    "VBL": {
+      "cmp": 470.25,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "VEDL": {
+      "cmp": 267.7,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 7.6,
+      "signal": "continuing_down"
+    },
+    "VIJAYA": {
+      "cmp": 1382.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 57.7,
+      "signal": "continuing_up"
+    },
+    "VMM": {
+      "cmp": 114.28,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 0.0,
+      "signal": "fresh_sell"
+    },
+    "VOLTAS": {
+      "cmp": 1358.9,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 76.2,
+      "signal": "fresh_buy"
+    },
+    "VTL": {
+      "cmp": 643.55,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 14.3,
+      "signal": "fresh_sell"
+    },
+    "WAAREEENER": {
+      "cmp": 2820.1,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "WELCORP": {
+      "cmp": 1683.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "WELSPUNLIV": {
+      "cmp": 164.54,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 74.0,
+      "signal": "continuing_up"
+    },
+    "WHIRLPOOL": {
+      "cmp": 782.75,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 14.5,
+      "signal": "continuing_down"
+    },
+    "WIPRO": {
+      "cmp": 177.14,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 18.1,
+      "signal": "continuing_down"
+    },
+    "WOCKPHARMA": {
+      "cmp": 1850.7,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 31.8,
+      "signal": "continuing_down"
+    },
+    "YESBANK": {
+      "cmp": 23.61,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 50.3,
+      "signal": "continuing_down"
+    },
+    "ZEEL": {
+      "cmp": 103.12,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 58.9,
+      "signal": "continuing_down"
+    },
+    "ZENSARTECH": {
+      "cmp": 527.9,
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "signal": "continuing_up"
+    },
+    "ZENTEC": {
+      "cmp": 1802.7,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 13.3,
+      "signal": "continuing_up"
+    },
+    "ZFCVINDIA": {
+      "cmp": 2313.2,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "signal": "continuing_down"
+    },
+    "ZYDUSLIFE": {
+      "cmp": 1133.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 86.8,
+      "signal": "continuing_up"
+    },
+    "ZYDUSWELL": {
+      "cmp": 575.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 58.7,
+      "signal": "continuing_up"
+    }
+  },
+  "errors": []
+}
