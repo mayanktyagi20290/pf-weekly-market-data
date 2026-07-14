@@ -60,11 +60,9 @@
   .sym a:hover{color:var(--amber);border-color:var(--amber);}
 
   .badge{display:inline-block;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.4px;}
-  .badge.fresh_buy{background:rgba(76,141,255,.18);color:var(--blue);}
-  .badge.continuing_up{background:rgba(22,199,132,.18);color:var(--green);}
-  .badge.fresh_sell{background:rgba(234,57,67,.15);color:#f0959a;}
-  .badge.continuing_down{background:rgba(234,57,67,.25);color:var(--red);}
-  .badge.unknown{background:var(--panel-alt);color:var(--muted);}
+  .badge.buy{background:rgba(22,199,132,.18);color:var(--green);}
+  .badge.sell{background:rgba(234,57,67,.2);color:var(--red);}
+  .badge.neutral{background:var(--panel-alt);color:var(--muted);}
 
   .trend{display:flex;gap:3px;justify-content:flex-end;}
   .wk{width:18px;height:18px;border-radius:4px;border:1px solid rgba(255,255,255,.06);}
@@ -122,10 +120,13 @@
   </div>
 
   <div class="legend">
-    <span><i style="background:var(--blue)"></i> 1st white — fresh buy</span>
-    <span><i style="background:var(--green)"></i> 2nd white — continuing up</span>
-    <span><i style="background:#f0959a"></i> 1st red — fresh sell</span>
-    <span><i style="background:var(--red)"></i> 2nd red — continuing down</span>
+    <span><i style="background:var(--green)"></i> Buy — current StochRSI &gt; 50</span>
+    <span><i style="background:var(--red)"></i> Sell — StochRSI was ≥95 last week, now ≤80</span>
+    <span style="margin-left:auto">Weekly trend squares: </span>
+    <span><i style="background:var(--blue)"></i> 1st white</span>
+    <span><i style="background:var(--green)"></i> 2nd white</span>
+    <span><i style="background:#f0959a"></i> 1st red</span>
+    <span><i style="background:var(--red)"></i> 2nd red</span>
   </div>
 
   <footer>Weekly Heikin-Ashi + StochRSI(14) computed from NSE weekly OHLC · refreshed Fridays after close</footer>
@@ -171,16 +172,16 @@ function setFilter(f){
 
 function render(){
   const all = rowsFromFeed();
-  const counts = {all: all.length, fresh_buy:0, fresh_sell:0, continuing_up:0, continuing_down:0, unknown:0};
+  const counts = {all: all.length, buy:0, sell:0, neutral:0};
   all.forEach(r=>{ counts[r.signal] = (counts[r.signal]||0) + 1; });
 
   document.getElementById('summary').innerHTML = `
     <div class="stat clickable ${activeFilter==='all'?'active':''}" onclick="setFilter('all')"><div class="label">Universe</div><div class="val">${counts.all}</div></div>
-    <div class="stat clickable ${activeFilter==='fresh_buy'?'active':''}" onclick="setFilter('fresh_buy')"><div class="label">Fresh Buy</div><div class="val" style="color:var(--blue)">${counts.fresh_buy||0}</div></div>
-    <div class="stat clickable ${activeFilter==='continuing_up'?'active':''}" onclick="setFilter('continuing_up')"><div class="label">Continuing Up</div><div class="val" style="color:var(--green)">${counts.continuing_up||0}</div></div>
-    <div class="stat clickable ${activeFilter==='fresh_sell'?'active':''}" onclick="setFilter('fresh_sell')"><div class="label">Fresh Sell</div><div class="val" style="color:#f0959a">${counts.fresh_sell||0}</div></div>
-    <div class="stat clickable ${activeFilter==='continuing_down'?'active':''}" onclick="setFilter('continuing_down')"><div class="label">Continuing Down</div><div class="val" style="color:var(--red)">${counts.continuing_down||0}</div></div>
+    <div class="stat clickable ${activeFilter==='buy'?'active':''}" onclick="setFilter('buy')"><div class="label">Buy (StochRSI &gt; 50)</div><div class="val" style="color:var(--green)">${counts.buy||0}</div></div>
+    <div class="stat clickable ${activeFilter==='sell'?'active':''}" onclick="setFilter('sell')"><div class="label">Sell (100 &rarr; 80)</div><div class="val" style="color:var(--red)">${counts.sell||0}</div></div>
+    <div class="stat clickable ${activeFilter==='neutral'?'active':''}" onclick="setFilter('neutral')"><div class="label">Neutral</div><div class="val" style="color:var(--muted)">${counts.neutral||0}</div></div>
     <div class="stat"><div class="label">Errors</div><div class="val">${(feed && feed.errors) ? feed.errors.length : 0}</div></div>
+    <div class="stat"><div class="label">As of</div><div class="val" style="font-size:12px">${feed && feed.asof ? new Date(feed.asof).toLocaleDateString('en-IN') : '—'}</div></div>
   `;
 
   const q = document.getElementById('searchBox').value.trim().toUpperCase();
