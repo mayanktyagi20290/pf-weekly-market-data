@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nifty 50 — Weekly Screener</title>
+<style>
+  :root{
+    --bg:#0A0D12; --panel:#10141B; --panel-alt:#141922; --border:#232A35;
+    --text:#DCE3ED; --muted:#74808F;
+    --green:#16C784; --red:#EA3943; --amber:#F0B90B; --blue:#4C8DFF;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--bg);color:var(--text);}
+  body{font-family:'IBM Plex Mono','Space Mono',monospace;font-size:13px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1320px;margin:0 auto;padding:22px 24px 60px;}
+
+  .topbar{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px;}
+  .brand .tag{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;}
+  .brand .sub{color:var(--muted);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-left:10px;}
+  .asof{color:var(--muted);font-size:11px;}
+
+  .feedbar{display:flex;gap:8px;align-items:center;margin-bottom:14px;flex-wrap:wrap;}
+  input.feedurl{flex:1;min-width:240px;max-width:560px;background:var(--panel-alt);border:1px solid var(--border);
+    color:var(--text);font-family:inherit;font-size:11.5px;padding:8px 10px;border-radius:5px;}
+  input.feedurl:focus{outline:none;border-color:var(--amber);}
+  button{background:var(--panel-alt);border:1px solid var(--border);color:var(--text);font-family:inherit;
+    font-size:11.5px;padding:8px 13px;border-radius:5px;cursor:pointer;}
+  button:hover{border-color:var(--amber);color:var(--amber);}
+  button.primary{background:var(--amber);color:#1a1300;border-color:var(--amber);font-weight:600;}
+  .note{color:var(--muted);font-size:11px;}
+  .note.ok{color:var(--green);} .note.err{color:var(--red);}
+
+  .summary{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--border);
+    border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:14px;}
+  .stat{background:var(--panel);padding:12px 14px;}
+  .stat .label{color:var(--muted);font-size:9.5px;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;}
+  .stat .val{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;}
+  .stat.clickable{cursor:pointer;}
+  .stat.clickable:hover{background:var(--panel-alt);}
+  .stat.active{outline:2px solid var(--amber);outline-offset:-2px;}
+
+  .filterbar{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap;}
+  input.search{background:var(--panel-alt);border:1px solid var(--border);color:var(--text);font-family:inherit;
+    font-size:12px;padding:7px 10px;border-radius:5px;width:200px;}
+  input.search:focus{outline:none;border-color:var(--amber);}
+
+  .tablewrap{border:1px solid var(--border);border-radius:6px;overflow-x:auto;background:var(--panel);max-height:70vh;overflow-y:auto;}
+  table{border-collapse:collapse;width:100%;min-width:820px;}
+  thead th{position:sticky;top:0;background:var(--panel-alt);color:var(--muted);font-weight:600;font-size:10px;
+    text-transform:uppercase;letter-spacing:.8px;padding:10px 8px;text-align:right;border-bottom:1px solid var(--border);
+    white-space:nowrap;cursor:pointer;z-index:1;}
+  thead th.left{text-align:left;}
+  thead th:hover{color:var(--amber);}
+  thead th.sorted{color:var(--amber);}
+  tbody td{padding:6px 8px;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap;}
+  tbody td.left{text-align:left;}
+  tbody tr:hover{background:var(--panel-alt);}
+  .sym{font-weight:600;}
+  .sym a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted);}
+  .sym a:hover{color:var(--amber);border-color:var(--amber);}
+
+  .badge{display:inline-block;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.4px;}
+  .badge.buy{background:rgba(22,199,132,.18);color:var(--green);}
+  .badge.sell{background:rgba(234,57,67,.2);color:var(--red);}
+  .badge.neutral{background:var(--panel-alt);color:var(--muted);}
+
+  .trend{display:flex;gap:3px;justify-content:flex-end;}
+  .wk{width:18px;height:18px;border-radius:4px;border:1px solid rgba(255,255,255,.06);}
+  .wk.w2{background:var(--green);} .wk.w1{background:var(--blue);}
+  .wk.r1{background:#f0959a;} .wk.r2{background:var(--red);}
+
+  .rsi{font-weight:600;} .rsi.hot{color:var(--red);} .rsi.strong{color:var(--green);}
+
+  .legend{display:flex;gap:14px;align-items:center;margin-top:10px;color:var(--muted);font-size:10.5px;flex-wrap:wrap;}
+  .legend span{display:inline-flex;align-items:center;gap:5px;}
+  .legend i{width:12px;height:12px;border-radius:3px;display:inline-block;}
+  footer{margin-top:16px;color:var(--muted);font-size:10.5px;text-align:center;}
+  .empty{padding:30px;text-align:center;color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand"><span class="tag">NIFTY 50</span><span class="sub">weekly screener · fresh buy/sell signals</span></div>
+    <div class="asof" id="asofLabel">not loaded yet</div>
+  </div>
+
+  <div class="feedbar">
+    <input id="feedUrl" class="feedurl" placeholder="nifty50_screener.json URL (GitHub Pages / raw.githubusercontent.com link)">
+    <button class="primary" onclick="loadFeed()">Load</button>
+    <label style="color:var(--muted);font-size:11px;display:flex;align-items:center;gap:5px;">
+      <input type="checkbox" id="autoLoad"> auto-load saved URL on open
+    </label>
+    <div style="flex:1"></div>
+    <span class="note" id="feedNote">paste the screener JSON URL and hit Load</span>
+  </div>
+
+  <div class="summary" id="summary"></div>
+
+  <div class="filterbar">
+    <input class="search" id="searchBox" placeholder="Search symbol…" oninput="render()">
+    <div style="flex:1"></div>
+    <span class="note">Click a summary tile to filter · click a column header to sort</span>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="left" data-k="symbol">Symbol</th>
+          <th data-k="cmp">CMP</th>
+          <th class="left" data-k="signal">Signal</th>
+          <th class="left">Weekly Trend</th>
+          <th data-k="stochrsi">StochRSI</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="legend">
+    <span><i style="background:var(--green)"></i> Buy — current StochRSI &gt; 50</span>
+    <span><i style="background:var(--red)"></i> Sell — StochRSI was ≥95 last week, now ≤80</span>
+    <span style="margin-left:auto">Weekly trend squares: </span>
+    <span><i style="background:var(--blue)"></i> 1st white</span>
+    <span><i style="background:var(--green)"></i> 2nd white</span>
+    <span><i style="background:#f0959a"></i> 1st red</span>
+    <span><i style="background:var(--red)"></i> 2nd red</span>
+  </div>
+
+  <footer>Weekly Heikin-Ashi + StochRSI(14) computed from NSE weekly OHLC · refreshed Fridays after close</footer>
+</div>
+
+<script>
+const STORAGE_KEY = 'nifty50_screener_url';
+let feed = null;
+let sortKey = 'stochrsi', sortDir = 1;
+let activeFilter = 'all';
+
+function fmt(n, dec=1){ if(n===null||n===undefined||isNaN(n)) return '—'; return Number(n).toLocaleString('en-IN',{minimumFractionDigits:dec,maximumFractionDigits:dec}); }
+
+async function loadFeed(){
+  const url = document.getElementById('feedUrl').value.trim();
+  const note = document.getElementById('feedNote');
+  if(!url){ note.textContent='paste a URL first'; note.className='note err'; return; }
+  note.textContent = 'loading…'; note.className = 'note';
+  try{
+    const res = await fetch(url + (url.includes('?') ? '&' : '?') + 't=' + Date.now());
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    feed = await res.json();
+    note.textContent = `loaded ${Object.keys(feed.stocks||{}).length} stocks`;
+    note.className = 'note ok';
+    document.getElementById('asofLabel').textContent = feed.asof ? 'as of ' + new Date(feed.asof).toLocaleString('en-IN') : '';
+    try{ await window.storage.set(STORAGE_KEY, JSON.stringify({url, autoLoad: document.getElementById('autoLoad').checked}), false); }catch(e){}
+    render();
+  }catch(e){
+    note.textContent = 'load failed — check the URL (' + e.message + ')';
+    note.className = 'note err';
+  }
+}
+
+function rowsFromFeed(){
+  if(!feed || !feed.stocks) return [];
+  return Object.entries(feed.stocks).map(([symbol, v]) => ({symbol, ...v}));
+}
+
+function setFilter(f){
+  activeFilter = f;
+  render();
+}
+
+function render(){
+  const all = rowsFromFeed();
+  const counts = {all: all.length, buy:0, sell:0, neutral:0};
+  all.forEach(r=>{ counts[r.signal] = (counts[r.signal]||0) + 1; });
+
+  document.getElementById('summary').innerHTML = `
+    <div class="stat clickable ${activeFilter==='all'?'active':''}" onclick="setFilter('all')"><div class="label">Universe</div><div class="val">${counts.all}</div></div>
+    <div class="stat clickable ${activeFilter==='buy'?'active':''}" onclick="setFilter('buy')"><div class="label">Buy (StochRSI &gt; 50)</div><div class="val" style="color:var(--green)">${counts.buy||0}</div></div>
+    <div class="stat clickable ${activeFilter==='sell'?'active':''}" onclick="setFilter('sell')"><div class="label">Sell (100 &rarr; 80)</div><div class="val" style="color:var(--red)">${counts.sell||0}</div></div>
+    <div class="stat clickable ${activeFilter==='neutral'?'active':''}" onclick="setFilter('neutral')"><div class="label">Neutral</div><div class="val" style="color:var(--muted)">${counts.neutral||0}</div></div>
+    <div class="stat"><div class="label">Errors</div><div class="val">${(feed && feed.errors) ? feed.errors.length : 0}</div></div>
+    <div class="stat"><div class="label">As of</div><div class="val" style="font-size:12px">${feed && feed.asof ? new Date(feed.asof).toLocaleDateString('en-IN') : '—'}</div></div>
+  `;
+
+  const q = document.getElementById('searchBox').value.trim().toUpperCase();
+  let rows = all;
+  if(activeFilter !== 'all') rows = rows.filter(r=>r.signal === activeFilter);
+  if(q) rows = rows.filter(r=>r.symbol.toUpperCase().includes(q));
+
+  rows = [...rows].sort((a,b)=>{
+    let av = a[sortKey], bv = b[sortKey];
+    if(typeof av === 'string') return sortDir * av.localeCompare(bv);
+    return sortDir * ((av??0) - (bv??0));
+  });
+
+  if(!feed){
+    document.getElementById('tbody').innerHTML = `<tr><td colspan="5"><div class="empty">Paste your nifty50_screener.json URL above and hit Load.</div></td></tr>`;
+    return;
+  }
+  if(!rows.length){
+    document.getElementById('tbody').innerHTML = `<tr><td colspan="5"><div class="empty">No stocks match this filter/search.</div></td></tr>`;
+    return;
+  }
+
+  const WK_CLASS = {'2nd red':'r2','1st red':'r1','1st white':'w1','2nd white':'w2'};
+  document.getElementById('tbody').innerHTML = rows.map(r=>{
+    const rsiClass = r.stochrsi>=80?'hot':(r.stochrsi<=20?'strong':'');
+    const trend = ['week1','week2','week3','week4'].map(wk=>{
+      const st = r[wk];
+      return `<div class="wk ${WK_CLASS[st]||''}" title="${st||''}"></div>`;
+    }).join('');
+    return `
+    <tr>
+      <td class="left sym"><a href="https://chartink.com/stocks/${r.symbol.toLowerCase()}.html" target="_blank" rel="noopener">${r.symbol}</a></td>
+      <td>₹${fmt(r.cmp,2)}</td>
+      <td class="left"><span class="badge ${r.signal}">${(r.signal||'unknown').replace('_',' ')}</span></td>
+      <td class="left"><div class="trend">${trend}</div></td>
+      <td><span class="rsi ${rsiClass}">${fmt(r.stochrsi,1)}</span></td>
+    </tr>`;
+  }).join('');
+}
+
+document.querySelectorAll('thead th[data-k]').forEach(th=>{
+  th.addEventListener('click', ()=>{
+    const k = th.dataset.k;
+    if(sortKey===k) sortDir *= -1; else { sortKey = k; sortDir = 1; }
+    document.querySelectorAll('thead th').forEach(x=>x.classList.remove('sorted'));
+    th.classList.add('sorted');
+    render();
+  });
+});
+
+async function init(){
+  try{
+    const res = await window.storage.get(STORAGE_KEY);
+    if(res && res.value){
+      const parsed = JSON.parse(res.value);
+      if(parsed.url) document.getElementById('feedUrl').value = parsed.url;
+      if(parsed.autoLoad){ document.getElementById('autoLoad').checked = true; loadFeed(); }
+    }
+  }catch(e){}
+  render();
+}
+init();
+</script>
+</body>
+</html>
