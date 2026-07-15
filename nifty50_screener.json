@@ -1,0 +1,507 @@
+{
+  "asof": "2026-07-15T09:50:00.844059+05:30",
+  "universe_size": 50,
+  "stocks": {
+    "ADANIENT": {
+      "cmp": 3196.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 88.1,
+      "stochrsi_prev": 87.5,
+      "signal": "buy"
+    },
+    "ADANIPORTS": {
+      "cmp": 1832.1,
+      "week1": "1st red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 48.8,
+      "stochrsi_prev": 65.4,
+      "signal": "neutral"
+    },
+    "APOLLOHOSP": {
+      "cmp": 8975.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "stochrsi_prev": 91.3,
+      "signal": "buy"
+    },
+    "ASIANPAINT": {
+      "cmp": 2671.7,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 46.5,
+      "stochrsi_prev": 61.0,
+      "signal": "neutral"
+    },
+    "AXISBANK": {
+      "cmp": 1339.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 57.2,
+      "stochrsi_prev": 44.2,
+      "signal": "buy"
+    },
+    "BAJAJ-AUTO": {
+      "cmp": 10342.0,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 47.7,
+      "stochrsi_prev": 32.8,
+      "signal": "neutral"
+    },
+    "BAJAJFINSV": {
+      "cmp": 1888.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 87.3,
+      "stochrsi_prev": 100.0,
+      "signal": "buy"
+    },
+    "BAJFINANCE": {
+      "cmp": 1030.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 96.0,
+      "stochrsi_prev": 90.2,
+      "signal": "buy"
+    },
+    "BEL": {
+      "cmp": 412.4,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "1st red",
+      "stochrsi": 15.1,
+      "stochrsi_prev": 19.7,
+      "signal": "neutral"
+    },
+    "BHARTIARTL": {
+      "cmp": 1935.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "stochrsi_prev": 100.0,
+      "signal": "buy"
+    },
+    "CIPLA": {
+      "cmp": 1440.0,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 90.9,
+      "stochrsi_prev": 91.3,
+      "signal": "buy"
+    },
+    "COALINDIA": {
+      "cmp": 429.75,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.8,
+      "stochrsi_prev": 0.0,
+      "signal": "neutral"
+    },
+    "DRREDDY": {
+      "cmp": 1237.5,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "stochrsi_prev": 0.0,
+      "signal": "neutral"
+    },
+    "EICHERMOT": {
+      "cmp": 7405.5,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 57.2,
+      "stochrsi_prev": 50.0,
+      "signal": "buy"
+    },
+    "ETERNAL": {
+      "cmp": 289.2,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 98.9,
+      "stochrsi_prev": 100.0,
+      "signal": "buy"
+    },
+    "GRASIM": {
+      "cmp": 3124.8,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 61.5,
+      "stochrsi_prev": 98.3,
+      "signal": "sell"
+    },
+    "HCLTECH": {
+      "cmp": 1173.9,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 67.8,
+      "stochrsi_prev": 58.7,
+      "signal": "buy"
+    },
+    "HDFCBANK": {
+      "cmp": 815.35,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 90.0,
+      "stochrsi_prev": 100.0,
+      "signal": "buy"
+    },
+    "HDFCLIFE": {
+      "cmp": 567.1,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 58.2,
+      "stochrsi_prev": 59.3,
+      "signal": "buy"
+    },
+    "HINDALCO": {
+      "cmp": 974.3,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 10.7,
+      "stochrsi_prev": 7.2,
+      "signal": "neutral"
+    },
+    "HINDUNILVR": {
+      "cmp": 2104.9,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 2.6,
+      "stochrsi_prev": 26.8,
+      "signal": "neutral"
+    },
+    "ICICIBANK": {
+      "cmp": 1423.3,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "stochrsi_prev": 92.4,
+      "signal": "buy"
+    },
+    "INDIGO": {
+      "cmp": 5222.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 76.6,
+      "stochrsi_prev": 85.8,
+      "signal": "buy"
+    },
+    "INFY": {
+      "cmp": 1078.6,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 57.3,
+      "stochrsi_prev": 43.4,
+      "signal": "buy"
+    },
+    "ITC": {
+      "cmp": 276.3,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 15.9,
+      "stochrsi_prev": 33.7,
+      "signal": "neutral"
+    },
+    "JIOFIN": {
+      "cmp": 237.84,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 63.9,
+      "stochrsi_prev": 92.2,
+      "signal": "buy"
+    },
+    "JSWSTEEL": {
+      "cmp": 1247.0,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 21.3,
+      "stochrsi_prev": 19.2,
+      "signal": "neutral"
+    },
+    "KOTAKBANK": {
+      "cmp": 380.2,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 35.5,
+      "stochrsi_prev": 30.2,
+      "signal": "neutral"
+    },
+    "LT": {
+      "cmp": 3850.0,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "stochrsi_prev": 0.0,
+      "signal": "neutral"
+    },
+    "M&M": {
+      "cmp": 3113.4,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 52.9,
+      "stochrsi_prev": 59.3,
+      "signal": "buy"
+    },
+    "MARUTI": {
+      "cmp": 13557.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 48.2,
+      "stochrsi_prev": 66.2,
+      "signal": "neutral"
+    },
+    "MAXHEALTH": {
+      "cmp": 1101.7,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 67.6,
+      "stochrsi_prev": 76.0,
+      "signal": "buy"
+    },
+    "NESTLEIND": {
+      "cmp": 1428.3,
+      "week1": "1st white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 16.1,
+      "stochrsi_prev": 55.8,
+      "signal": "neutral"
+    },
+    "NTPC": {
+      "cmp": 348.0,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 6.3,
+      "stochrsi_prev": 0.0,
+      "signal": "neutral"
+    },
+    "ONGC": {
+      "cmp": 248.72,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 22.8,
+      "stochrsi_prev": 17.5,
+      "signal": "neutral"
+    },
+    "POWERGRID": {
+      "cmp": 284.85,
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 5.5,
+      "stochrsi_prev": 0.0,
+      "signal": "neutral"
+    },
+    "RELIANCE": {
+      "cmp": 1302.4,
+      "week1": "2nd white",
+      "week2": "1st red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 16.1,
+      "stochrsi_prev": 20.8,
+      "signal": "neutral"
+    },
+    "SBILIFE": {
+      "cmp": 1877.3,
+      "week1": "1st white",
+      "week2": "1st red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 88.8,
+      "stochrsi_prev": 82.6,
+      "signal": "buy"
+    },
+    "SBIN": {
+      "cmp": 1033.5,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 58.5,
+      "stochrsi_prev": 60.7,
+      "signal": "buy"
+    },
+    "SHRIRAMFIN": {
+      "cmp": 1045.6,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "1st red",
+      "stochrsi": 73.9,
+      "stochrsi_prev": 73.0,
+      "signal": "buy"
+    },
+    "SUNPHARMA": {
+      "cmp": 1951.1,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 100.0,
+      "stochrsi_prev": 100.0,
+      "signal": "buy"
+    },
+    "TATACONSUM": {
+      "cmp": 1091.8,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "stochrsi_prev": 8.9,
+      "signal": "neutral"
+    },
+    "TATASTEEL": {
+      "cmp": 188.46,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.3,
+      "stochrsi_prev": 9.3,
+      "signal": "neutral"
+    },
+    "TCS": {
+      "cmp": 2173.1,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "1st white",
+      "stochrsi": 81.3,
+      "stochrsi_prev": 0.0,
+      "signal": "buy"
+    },
+    "TECHM": {
+      "cmp": 1471.4,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white",
+      "stochrsi": 92.5,
+      "stochrsi_prev": 80.6,
+      "signal": "buy"
+    },
+    "TITAN": {
+      "cmp": 4587.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 68.1,
+      "stochrsi_prev": 67.7,
+      "signal": "buy"
+    },
+    "TMPV": {
+      "cmp": 334.1,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 0.0,
+      "stochrsi_prev": 11.4,
+      "signal": "neutral"
+    },
+    "TRENT": {
+      "cmp": 2887.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "1st red",
+      "week4": "2nd red",
+      "stochrsi": 38.0,
+      "stochrsi_prev": 49.5,
+      "signal": "neutral"
+    },
+    "ULTRACEMCO": {
+      "cmp": 11653.0,
+      "week1": "2nd white",
+      "week2": "2nd white",
+      "week3": "2nd white",
+      "week4": "2nd white",
+      "stochrsi": 83.8,
+      "stochrsi_prev": 91.1,
+      "signal": "buy"
+    },
+    "WIPRO": {
+      "cmp": 175.8,
+      "week1": "2nd red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red",
+      "stochrsi": 8.0,
+      "stochrsi_prev": 5.3,
+      "signal": "neutral"
+    }
+  },
+  "errors": []
+}
