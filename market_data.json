@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-11T16:04:46.632577+05:30",
+  "asof": "2026-08-11T16:58:28.764850+05:30",
   "market_open": false,
   "prices": {
     "CUPID": 276.65,
@@ -106,8 +106,8 @@
     "PREMIERENE": {
       "week1": "1st red",
       "week2": "2nd red",
-      "week3": "2nd red",
-      "week4": "1st white"
+      "week3": "1st white",
+      "week4": "2nd white"
     },
     "CHAMBLFERT": {
       "week1": "2nd red",
@@ -155,22 +155,22 @@
   "stochrsi": {
     "CUPID": 100.0,
     "COFORGE": 100.0,
-    "SUBEXLTD": 100.0,
+    "SUBEXLTD": 95.8,
     "ETERNAL": 100.0,
     "UJJIVANSFB": 86.4,
-    "JSWINFRA": 71.1,
-    "MOSCHIP": 3.2,
+    "JSWINFRA": 76.2,
+    "MOSCHIP": 6.6,
     "STALLION": 72.6,
     "EXIDEIND": 90.6,
     "EMCURE": 100.0,
     "JAMNAAUTO": 17.0,
     "CHENNPETRO": 100.0,
     "TATACAP": 87.8,
-    "PREMIERENE": 23.7,
-    "CHAMBLFERT": 37.4,
-    "RITES": 78.8,
+    "PREMIERENE": 38.0,
+    "CHAMBLFERT": 36.5,
+    "RITES": 78.7,
     "GPPL": 0.0,
-    "JSWENERGY": 38.7,
+    "JSWENERGY": 37.1,
     "WIPRO": 85.7,
     "TEJASNET": 25.6,
     "SARDAEN": 0.0
