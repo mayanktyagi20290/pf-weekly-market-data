@@ -1,28 +1,28 @@
 {
-  "asof": "2026-08-12T15:48:26.256216+05:30",
+  "asof": "2026-08-12T16:44:31.824001+05:30",
   "market_open": false,
   "prices": {
     "CUPID": 290.0,
     "COFORGE": 1801.5,
-    "SUBEXLTD": 13.6,
-    "ETERNAL": 314.95,
+    "SUBEXLTD": 13.47,
+    "ETERNAL": 314.05,
     "UJJIVANSFB": 72.35,
     "JSWINFRA": 346.6,
-    "MOSCHIP": 204.85,
+    "MOSCHIP": 205.19,
     "STALLION": 253.35,
     "EXIDEIND": 491.8,
-    "EMCURE": 2005.1,
+    "EMCURE": 2009.6,
     "JAMNAAUTO": 123.9,
-    "CHENNPETRO": 1374.4,
-    "TATACAP": 367.0,
+    "CHENNPETRO": 1379.5,
+    "TATACAP": 367.05,
     "PREMIERENE": 1026.1,
-    "CHAMBLFERT": 442.1,
+    "CHAMBLFERT": 442.3,
     "RITES": 223.5,
-    "GPPL": 150.19,
+    "GPPL": 149.79,
     "JSWENERGY": 558.75,
     "WIPRO": 183.94,
     "TEJASNET": 526.1,
-    "SARDAEN": 489.0
+    "SARDAEN": 489.45
   },
   "trend": {
     "CUPID": {
