@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-17T15:53:36.186658+05:30",
+  "asof": "2026-08-17T16:24:57.793940+05:30",
   "market_open": false,
   "prices": {
     "CUPID": 270.1,
@@ -17,12 +17,12 @@
     "TATACAP": 359.3,
     "PREMIERENE": 1015.5,
     "CHAMBLFERT": 439.05,
-    "RITES": 222.6,
+    "RITES": 221.72,
     "GPPL": 159.1,
     "JSWENERGY": 555.5,
     "WIPRO": 181.9,
     "TEJASNET": 523.5,
-    "SARDAEN": 520.95
+    "SARDAEN": 521.15
   },
   "trend": {
     "CUPID": {
