@@ -1,104 +1,104 @@
 {
-  "asof": "2026-10-06T00:28:22.677090+05:30",
-  "market_open": false,
+  "asof": "2026-10-06T15:08:37.591559+05:30",
+  "market_open": true,
   "prices": {
-    "CUPID": 310.0,
-    "COFORGE": 1852.0,
-    "SUBEXLTD": 19.21,
-    "ETERNAL": 320.8,
-    "UJJIVANSFB": 66.59,
-    "JSWINFRA": 360.0,
-    "MOSCHIP": 195.84,
-    "STALLION": 224.61,
-    "EXIDEIND": 405.0,
-    "EMCURE": 1938.5,
-    "JAMNAAUTO": 134.4,
-    "CHENNPETRO": 1401.0,
-    "TATACAP": 317.6,
-    "PREMIERENE": 891.95,
-    "CHAMBLFERT": 396.75,
-    "RITES": 205.74,
-    "GPPL": 167.5,
-    "JSWENERGY": 491.8,
-    "WIPRO": 162.14,
-    "TEJASNET": 463.2,
-    "SARDAEN": 501.0
+    "CUPID": 324.55,
+    "COFORGE": 1842.9,
+    "SUBEXLTD": 19.6,
+    "ETERNAL": 327.8,
+    "UJJIVANSFB": 65.35,
+    "JSWINFRA": 362.55,
+    "MOSCHIP": 197.36,
+    "STALLION": 223.0,
+    "EXIDEIND": 406.1,
+    "EMCURE": 1921.1,
+    "JAMNAAUTO": 143.55,
+    "CHENNPETRO": 1404.0,
+    "TATACAP": 321.6,
+    "PREMIERENE": 905.1,
+    "CHAMBLFERT": 404.3,
+    "RITES": 203.81,
+    "GPPL": 168.37,
+    "JSWENERGY": 495.0,
+    "WIPRO": 161.17,
+    "TEJASNET": 475.7,
+    "SARDAEN": 500.15
   },
   "trend": {
     "CUPID": {
-      "week1": "2nd white",
-      "week2": "1st red",
-      "week3": "2nd red",
-      "week4": "1st white"
-    },
-    "COFORGE": {
       "week1": "1st red",
       "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white"
+    },
+    "COFORGE": {
+      "week1": "2nd red",
+      "week2": "2nd red",
       "week3": "2nd red",
-      "week4": "2nd red"
+      "week4": "1st white"
     },
     "SUBEXLTD": {
       "week1": "2nd white",
       "week2": "2nd white",
       "week3": "2nd white",
-      "week4": "2nd white"
+      "week4": "1st red"
     },
     "ETERNAL": {
-      "week1": "1st red",
-      "week2": "2nd red",
-      "week3": "1st white",
-      "week4": "1st red"
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "1st red",
+      "week4": "2nd red"
     },
     "UJJIVANSFB": {
       "week1": "2nd red",
       "week2": "2nd red",
-      "week3": "2nd red",
-      "week4": "1st white"
+      "week3": "1st white",
+      "week4": "2nd white"
     },
     "JSWINFRA": {
-      "week1": "1st red",
-      "week2": "1st white",
+      "week1": "1st white",
+      "week2": "2nd white",
       "week3": "2nd white",
       "week4": "2nd white"
     },
     "MOSCHIP": {
-      "week1": "1st red",
+      "week1": "2nd red",
       "week2": "2nd red",
       "week3": "2nd red",
       "week4": "2nd red"
     },
     "STALLION": {
-      "week1": "2nd red",
-      "week2": "1st white",
+      "week1": "1st white",
+      "week2": "2nd white",
       "week3": "2nd white",
       "week4": "2nd white"
     },
     "EXIDEIND": {
       "week1": "2nd red",
-      "week2": "2nd red",
-      "week3": "1st white",
-      "week4": "1st red"
+      "week2": "1st white",
+      "week3": "1st red",
+      "week4": "2nd red"
     },
     "EMCURE": {
       "week1": "2nd white",
       "week2": "2nd white",
-      "week3": "2nd white",
-      "week4": "1st red"
+      "week3": "1st red",
+      "week4": "2nd red"
     },
     "JAMNAAUTO": {
-      "week1": "1st white",
+      "week1": "2nd white",
       "week2": "2nd white",
       "week3": "2nd white",
       "week4": "2nd white"
     },
     "CHENNPETRO": {
       "week1": "2nd white",
-      "week2": "2nd white",
-      "week3": "1st red",
+      "week2": "1st red",
+      "week3": "2nd red",
       "week4": "2nd red"
     },
     "TATACAP": {
-      "week1": "1st red",
+      "week1": "2nd red",
       "week2": "2nd red",
       "week3": "2nd red",
       "week4": "2nd red"
@@ -119,12 +119,12 @@
       "week1": "2nd red",
       "week2": "2nd red",
       "week3": "2nd red",
-      "week4": "2nd red"
+      "week4": "1st white"
     },
     "GPPL": {
-      "week1": "1st red",
-      "week2": "2nd red",
-      "week3": "1st white",
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
       "week4": "2nd white"
     },
     "JSWENERGY": {
@@ -140,40 +140,40 @@
       "week4": "2nd red"
     },
     "TEJASNET": {
-      "week1": "2nd white",
-      "week2": "1st red",
+      "week1": "1st red",
+      "week2": "2nd red",
       "week3": "2nd red",
       "week4": "2nd red"
     },
     "SARDAEN": {
-      "week1": "1st white",
-      "week2": "1st red",
+      "week1": "1st red",
+      "week2": "2nd red",
       "week3": "2nd red",
       "week4": "2nd red"
     }
   },
   "stochrsi": {
-    "CUPID": 38.4,
-    "COFORGE": 34.7,
-    "SUBEXLTD": 43.5,
-    "ETERNAL": 15.9,
-    "UJJIVANSFB": 9.6,
-    "JSWINFRA": 56.6,
+    "CUPID": 45.5,
+    "COFORGE": 36.2,
+    "SUBEXLTD": 43.7,
+    "ETERNAL": 48.7,
+    "UJJIVANSFB": 6.3,
+    "JSWINFRA": 65.8,
     "MOSCHIP": 0.0,
-    "STALLION": 36.0,
+    "STALLION": 17.4,
     "EXIDEIND": 0.0,
-    "EMCURE": 17.7,
-    "JAMNAAUTO": 42.2,
-    "CHENNPETRO": 1.5,
-    "TATACAP": 0.0,
-    "PREMIERENE": 0.0,
-    "CHAMBLFERT": 0.0,
-    "RITES": 39.7,
+    "EMCURE": 0.0,
+    "JAMNAAUTO": 77.6,
+    "CHENNPETRO": 14.9,
+    "TATACAP": 4.7,
+    "PREMIERENE": 14.1,
+    "CHAMBLFERT": 19.3,
+    "RITES": 20.8,
     "GPPL": 100.0,
-    "JSWENERGY": 0.0,
-    "WIPRO": 0.0,
-    "TEJASNET": 0.0,
-    "SARDAEN": 8.0
+    "JSWENERGY": 17.2,
+    "WIPRO": 13.6,
+    "TEJASNET": 8.0,
+    "SARDAEN": 29.9
   },
   "errors": []
 }
