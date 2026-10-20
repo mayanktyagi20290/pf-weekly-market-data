@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-19T21:16:31.669283+05:30",
-  "market_open": false,
+  "asof": "2026-10-20T13:33:31.475528+05:30",
+  "market_open": true,
   "prices": {
     "CUPID": 336.25,
     "COFORGE": 1925.0,
@@ -26,39 +26,39 @@
   },
   "trend": {
     "CUPID": {
-      "week1": "2nd red",
-      "week2": "1st white",
+      "week1": "1st white",
+      "week2": "2nd white",
       "week3": "2nd white",
       "week4": "2nd white"
     },
     "COFORGE": {
       "week1": "2nd red",
-      "week2": "2nd red",
-      "week3": "1st white",
+      "week2": "1st white",
+      "week3": "2nd white",
       "week4": "2nd white"
     },
     "SUBEXLTD": {
       "week1": "2nd white",
-      "week2": "2nd white",
-      "week3": "1st red",
+      "week2": "1st red",
+      "week3": "2nd red",
       "week4": "2nd red"
     },
     "ETERNAL": {
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "1st white",
+      "week4": "2nd white"
+    },
+    "UJJIVANSFB": {
       "week1": "1st white",
       "week2": "1st red",
       "week3": "2nd red",
-      "week4": "1st white"
-    },
-    "UJJIVANSFB": {
-      "week1": "2nd red",
-      "week2": "1st white",
-      "week3": "1st red",
       "week4": "2nd red"
     },
     "JSWINFRA": {
       "week1": "2nd white",
-      "week2": "2nd white",
-      "week3": "1st red",
+      "week2": "1st red",
+      "week3": "2nd red",
       "week4": "2nd red"
     },
     "MOSCHIP": {
@@ -69,19 +69,19 @@
     },
     "STALLION": {
       "week1": "2nd white",
-      "week2": "2nd white",
-      "week3": "1st red",
-      "week4": "2nd red"
-    },
-    "EXIDEIND": {
-      "week1": "1st white",
       "week2": "1st red",
       "week3": "2nd red",
       "week4": "2nd red"
     },
+    "EXIDEIND": {
+      "week1": "1st red",
+      "week2": "2nd red",
+      "week3": "2nd red",
+      "week4": "2nd red"
+    },
     "EMCURE": {
-      "week1": "2nd white",
-      "week2": "1st red",
+      "week1": "1st red",
+      "week2": "2nd red",
       "week3": "2nd red",
       "week4": "2nd red"
     },
@@ -92,10 +92,10 @@
       "week4": "2nd white"
     },
     "CHENNPETRO": {
-      "week1": "1st red",
-      "week2": "2nd red",
-      "week3": "1st white",
-      "week4": "2nd white"
+      "week1": "2nd red",
+      "week2": "1st white",
+      "week3": "2nd white",
+      "week4": "1st red"
     },
     "TATACAP": {
       "week1": "2nd red",
@@ -106,8 +106,8 @@
     "PREMIERENE": {
       "week1": "2nd red",
       "week2": "2nd red",
-      "week3": "2nd red",
-      "week4": "1st white"
+      "week3": "1st white",
+      "week4": "2nd white"
     },
     "CHAMBLFERT": {
       "week1": "2nd red",
@@ -118,8 +118,8 @@
     "RITES": {
       "week1": "2nd red",
       "week2": "2nd red",
-      "week3": "2nd red",
-      "week4": "1st white"
+      "week3": "1st white",
+      "week4": "2nd white"
     },
     "GPPL": {
       "week1": "1st white",
@@ -136,8 +136,8 @@
     "WIPRO": {
       "week1": "2nd red",
       "week2": "2nd red",
-      "week3": "2nd red",
-      "week4": "1st white"
+      "week3": "1st white",
+      "week4": "2nd white"
     },
     "TEJASNET": {
       "week1": "2nd red",
@@ -153,26 +153,26 @@
     }
   },
   "stochrsi": {
-    "CUPID": 34.2,
-    "COFORGE": 58.1,
-    "SUBEXLTD": 33.2,
-    "ETERNAL": 43.6,
-    "UJJIVANSFB": 14.3,
-    "JSWINFRA": 2.9,
+    "CUPID": 0.0,
+    "COFORGE": 48.5,
+    "SUBEXLTD": 13.5,
+    "ETERNAL": 23.8,
+    "UJJIVANSFB": 13.9,
+    "JSWINFRA": 0.0,
     "MOSCHIP": 0.0,
     "STALLION": 0.0,
     "EXIDEIND": 0.0,
     "EMCURE": 0.0,
-    "JAMNAAUTO": 68.2,
-    "CHENNPETRO": 3.0,
-    "TATACAP": 8.9,
-    "PREMIERENE": 14.5,
-    "CHAMBLFERT": 34.0,
-    "RITES": 44.7,
+    "JAMNAAUTO": 60.7,
+    "CHENNPETRO": 9.2,
+    "TATACAP": 0.0,
+    "PREMIERENE": 17.2,
+    "CHAMBLFERT": 27.4,
+    "RITES": 26.3,
     "GPPL": 88.8,
-    "JSWENERGY": 27.9,
-    "WIPRO": 100.0,
-    "TEJASNET": 18.9,
+    "JSWENERGY": 27.5,
+    "WIPRO": 93.2,
+    "TEJASNET": 7.0,
     "SARDAEN": 22.0
   },
   "errors": []
