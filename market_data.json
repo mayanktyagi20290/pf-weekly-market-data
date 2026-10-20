@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-20T13:33:31.475528+05:30",
-  "market_open": true,
+  "asof": "2026-10-20T19:02:20.098985+05:30",
+  "market_open": false,
   "prices": {
     "CUPID": 336.25,
     "COFORGE": 1925.0,
@@ -122,10 +122,10 @@
       "week4": "2nd white"
     },
     "GPPL": {
-      "week1": "1st white",
+      "week1": "2nd white",
       "week2": "2nd white",
       "week3": "2nd white",
-      "week4": "2nd white"
+      "week4": "1st red"
     },
     "JSWENERGY": {
       "week1": "2nd red",
@@ -169,11 +169,11 @@
     "PREMIERENE": 17.2,
     "CHAMBLFERT": 27.4,
     "RITES": 26.3,
-    "GPPL": 88.8,
+    "GPPL": 87.3,
     "JSWENERGY": 27.5,
     "WIPRO": 93.2,
     "TEJASNET": 7.0,
-    "SARDAEN": 22.0
+    "SARDAEN": 4.4
   },
   "errors": []
 }
