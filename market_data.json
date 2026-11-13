@@ -1,12 +1,12 @@
 {
-  "asof": "2026-11-13T15:52:52.592309+05:30",
+  "asof": "2026-11-13T23:26:34.562636+05:30",
   "market_open": false,
   "prices": {
     "CUPID": 376.15,
     "COFORGE": 2028.0,
-    "SUBEXLTD": 16.62,
-    "ETERNAL": 364.5,
-    "UJJIVANSFB": 60.5,
+    "SUBEXLTD": 16.52,
+    "ETERNAL": 363.65,
+    "UJJIVANSFB": 60.6,
     "JSWINFRA": 339.5,
     "MOSCHIP": 170.98,
     "STALLION": 187.12,
@@ -20,9 +20,9 @@
     "RITES": 195.52,
     "GPPL": 173.56,
     "JSWENERGY": 514.55,
-    "WIPRO": 195.13,
-    "TEJASNET": 420.9,
-    "SARDAEN": 444.8
+    "WIPRO": 194.6,
+    "TEJASNET": 421.2,
+    "SARDAEN": 444.3
   },
   "trend": {
     "CUPID": {
