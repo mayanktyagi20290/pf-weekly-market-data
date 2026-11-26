@@ -1,28 +1,28 @@
 {
-  "asof": "2026-11-25T17:25:01.241956+05:30",
+  "asof": "2026-11-26T17:13:50.094736+05:30",
   "market_open": false,
   "prices": {
-    "CUPID": 366.0,
-    "COFORGE": 2060.0,
-    "SUBEXLTD": 18.31,
-    "ETERNAL": 371.7,
-    "UJJIVANSFB": 60.75,
-    "JSWINFRA": 360.0,
-    "MOSCHIP": 157.6,
-    "STALLION": 171.59,
-    "EXIDEIND": 396.0,
-    "EMCURE": 2315.0,
-    "JAMNAAUTO": 135.95,
-    "CHENNPETRO": 1366.6,
-    "TATACAP": 351.6,
-    "PREMIERENE": 815.25,
-    "CHAMBLFERT": 366.95,
-    "RITES": 185.55,
-    "GPPL": 174.24,
-    "JSWENERGY": 485.8,
-    "WIPRO": 189.05,
-    "TEJASNET": 403.0,
-    "SARDAEN": 476.75
+    "CUPID": 371.1,
+    "COFORGE": 2000.0,
+    "SUBEXLTD": 18.79,
+    "ETERNAL": 367.7,
+    "UJJIVANSFB": 56.87,
+    "JSWINFRA": 365.55,
+    "MOSCHIP": 160.0,
+    "STALLION": 170.43,
+    "EXIDEIND": 386.9,
+    "EMCURE": 2329.1,
+    "JAMNAAUTO": 128.82,
+    "CHENNPETRO": 1371.0,
+    "TATACAP": 350.6,
+    "PREMIERENE": 803.5,
+    "CHAMBLFERT": 370.9,
+    "RITES": 186.0,
+    "GPPL": 179.1,
+    "JSWENERGY": 485.15,
+    "WIPRO": 196.54,
+    "TEJASNET": 398.75,
+    "SARDAEN": 479.95
   },
   "trend": {
     "CUPID": {
@@ -53,7 +53,7 @@
       "week1": "2nd red",
       "week2": "1st white",
       "week3": "2nd white",
-      "week4": "2nd white"
+      "week4": "1st red"
     },
     "JSWINFRA": {
       "week1": "1st white",
@@ -137,7 +137,7 @@
       "week1": "2nd white",
       "week2": "2nd white",
       "week3": "1st red",
-      "week4": "2nd red"
+      "week4": "1st white"
     },
     "TEJASNET": {
       "week1": "2nd red",
@@ -153,27 +153,27 @@
     }
   },
   "stochrsi": {
-    "CUPID": 25.5,
-    "COFORGE": 43.8,
-    "SUBEXLTD": 29.7,
+    "CUPID": 28.2,
+    "COFORGE": 17.3,
+    "SUBEXLTD": 29.8,
     "ETERNAL": 100.0,
-    "UJJIVANSFB": 53.7,
-    "JSWINFRA": 67.3,
-    "MOSCHIP": 23.9,
+    "UJJIVANSFB": 30.1,
+    "JSWINFRA": 77.5,
+    "MOSCHIP": 26.0,
     "STALLION": 0.0,
-    "EXIDEIND": 59.3,
-    "EMCURE": 87.0,
-    "JAMNAAUTO": 52.0,
+    "EXIDEIND": 52.7,
+    "EMCURE": 91.2,
+    "JAMNAAUTO": 26.1,
     "CHENNPETRO": 0.0,
-    "TATACAP": 69.4,
+    "TATACAP": 67.7,
     "PREMIERENE": 0.0,
-    "CHAMBLFERT": 65.5,
-    "RITES": 6.0,
-    "GPPL": 90.5,
-    "JSWENERGY": 59.6,
-    "WIPRO": 76.6,
-    "TEJASNET": 4.2,
-    "SARDAEN": 69.3
+    "CHAMBLFERT": 73.0,
+    "RITES": 8.0,
+    "GPPL": 100.0,
+    "JSWENERGY": 59.0,
+    "WIPRO": 90.7,
+    "TEJASNET": 1.5,
+    "SARDAEN": 74.6
   },
   "errors": []
 }
